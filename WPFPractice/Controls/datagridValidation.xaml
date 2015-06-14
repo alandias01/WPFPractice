@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPFPractice.Controls.datagridValidation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="datagridValidation" Height="300" Width="300"
+        xmlns:i="clr-namespace:Microsoft.Expression.Interactivity;assembly=Microsoft.Expression.Interactions"
+        >
+    <Grid>
+        <StackPanel DataContext="{Binding MS}">
+            <StackPanel Orientation="Horizontal" Margin="2">
+                <Label Content="_Name: "/>
+                <TextBox x:Name="nameText" Text="{Binding Path=Name,UpdateSourceTrigger=PropertyChanged,  ValidatesOnDataErrors=True}" Width="100">
+                                            
+                    <!-- This works on datagrid for whole object validation but not here using public string error-->
+                    <TextBox.BindingGroup>
+                        <BindingGroup>
+                            <BindingGroup.ValidationRules>
+                                <DataErrorValidationRule />
+                            </BindingGroup.ValidationRules>
+                        </BindingGroup>
+                    </TextBox.BindingGroup>
+                </TextBox>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="2">
+                <Label Content="_Age: " />
+                <TextBox x:Name="ageText" Text="{Binding Path=Age,UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Width="100"/>
+            </StackPanel>
+            
+        </StackPanel>
+        
+        
+        
+    </Grid>
+</Window>

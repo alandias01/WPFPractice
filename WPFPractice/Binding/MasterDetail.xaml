@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFPractice.Binding.MasterDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MasterDetail" Height="302" Width="649">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        
+        <DataGrid AutoGenerateColumns="True" Grid.Column="0" Name="dg1" />
+        
+        <StackPanel Orientation="Vertical" Grid.Column="2" DataContext="{Binding ElementName=dg1, Path=SelectedItem}" >
+            <TextBlock Text="Symbol" />
+            <TextBlock Margin="3,3,3,13" Text="{Binding Path=Symbol}"/>
+
+            <TextBlock Text="Qty" />            
+            <TextBlock Margin="3,3,3,13" Text="{Binding Path=Qty}"/>
+
+            <TextBlock Text="Price" />            
+            <TextBlock Margin="3,3,3,13" Text="{Binding Path=Price}"/>
+
+            <TextBlock Text="Rate" />
+            <TextBlock Margin="3,3,3,13" Text="{Binding Path=Rate}"/>
+        </StackPanel>
+    </Grid>
+</Window>

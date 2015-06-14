@@ -1,0 +1,43 @@
+﻿<Window x:Class="WPFPractice.Templates.DataTemplate.DataTemplateSelector01"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataTemplateSelector" Height="300" Width="300"
+        xmlns:loc="clr-namespace:WPFPractice.Templates.DataTemplate">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="DefaultDataTemplate">
+                <StackPanel>
+                    <TextBlock Text="{Binding Price}" Background="LightBlue"/>
+                    <TextBlock Text="{Binding Symbol}"/>
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="GreaterThanDataTemplate">
+                <StackPanel>
+                    <TextBlock Text="{Binding Price}" Background="LightGray"/>
+                    <TextBlock Text="{Binding Symbol}"/>
+                </StackPanel>
+
+            </DataTemplate>
+
+            <DataTemplate x:Key="LessThanDataTemplate">
+                
+                <StackPanel>
+                    <TextBlock Text="{Binding Price}" Background="Orange"/>
+                    <TextBlock Text="{Binding Symbol}"/>
+                </StackPanel>
+
+            </DataTemplate>
+            <loc:PropertyDataTemplateSelector x:Key="templateSelector"
+                                              DefaultnDataTemplate="{StaticResource DefaultDataTemplate}"
+                                              GreaterThanDataTemplate="{StaticResource GreaterThanDataTemplate}"
+                                              LessThanDataTemplate="{StaticResource LessThanDataTemplate}"/>
+
+        </Grid.Resources>
+
+        <ListBox Width="200" ItemsSource="{Binding}" ItemTemplateSelector="{StaticResource templateSelector}">
+            
+        </ListBox>
+        
+    </Grid>
+</Window>

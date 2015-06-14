@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPFPractice.styles.DatagridStyle2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DatagridStyle2" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        
+        <DataGrid AutoGenerateColumns="True" Grid.Row="1" ItemsSource="{Binding Pos}">
+            
+        </DataGrid>
+        
+    </Grid>
+</Window>

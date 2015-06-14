@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ADPDTCModelStoreContainer" CdmEntityContainer="ADPDTCEntities">
+    <EntitySetMapping Name="ADP_Raw">
+      <EntityTypeMapping TypeName="ADPDTCModel.ADP_Raw">
+        <MappingFragment StoreEntitySet="ADP_Raw">
+          <ScalarProperty Name="MatchType" ColumnName="MatchType" />
+          <ScalarProperty Name="MatchId" ColumnName="MatchId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TradeId" ColumnName="TradeId" />
+          <ScalarProperty Name="MatchedBy" ColumnName="MatchedBy" />
+          <ScalarProperty Name="Ctpy" ColumnName="Ctpy" />
+          <ScalarProperty Name="Tran_Id" ColumnName="Tran_Id" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Tran_Type" ColumnName="Tran_Type" />
+          <ScalarProperty Name="Acct_Number" ColumnName="Acct_Number" />
+          <ScalarProperty Name="Check_Digit" ColumnName="Check_Digit" />
+          <ScalarProperty Name="Acct_Crcy" ColumnName="Acct_Crcy" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="BatchCode" ColumnName="BatchCode" />
+          <ScalarProperty Name="Entry_Code" ColumnName="Entry_Code" />
+          <ScalarProperty Name="Process_Date" ColumnName="Process_Date" />
+          <ScalarProperty Name="Trade_Date" ColumnName="Trade_Date" />
+          <ScalarProperty Name="Settlement_Date" ColumnName="Settlement_Date" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Source_Security_Id" ColumnName="Source_Security_Id" />
+          <ScalarProperty Name="Alt_Security_Id" ColumnName="Alt_Security_Id" />
+          <ScalarProperty Name="Security_Desc" ColumnName="Security_Desc" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Cancel" ColumnName="Cancel" />
+          <ScalarProperty Name="BackDated" ColumnName="BackDated" />
+          <ScalarProperty Name="BackDated_Date" ColumnName="BackDated_Date" />
+          <ScalarProperty Name="Cpty" ColumnName="Cpty" />
+          <ScalarProperty Name="Accounting_Offset" ColumnName="Accounting_Offset" />
+          <ScalarProperty Name="Offset_Trans" ColumnName="Offset_Trans" />
+          <ScalarProperty Name="Record_Flag" ColumnName="Record_Flag" />
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Account_InActive" ColumnName="Account_InActive" />
+          <ScalarProperty Name="Account_InActive_Date" ColumnName="Account_InActive_Date" />
+          <ScalarProperty Name="RowColor" ColumnName="RowColor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DTFPARTs">
+      <EntityTypeMapping TypeName="ADPDTCModel.DTFPART">
+        <MappingFragment StoreEntitySet="DTFPART">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MatchId" ColumnName="MatchId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MatchedBy" ColumnName="MatchedBy" />
+          <ScalarProperty Name="DateofData" ColumnName="DateofData" />
+          <ScalarProperty Name="SubFunction" ColumnName="SubFunction" />
+          <ScalarProperty Name="DataTypeReq" ColumnName="DataTypeReq" />
+          <ScalarProperty Name="SystemOrigCode" ColumnName="SystemOrigCode" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="VerControlNum" ColumnName="VerControlNum" />
+          <ScalarProperty Name="TransOrigSource" ColumnName="TransOrigSource" />
+          <ScalarProperty Name="AcctNum" ColumnName="AcctNum" />
+          <ScalarProperty Name="SettlementCode" ColumnName="SettlementCode" />
+          <ScalarProperty Name="ParticipantNum" ColumnName="ParticipantNum" />
+          <ScalarProperty Name="CUSIP" ColumnName="CUSIP" />
+          <ScalarProperty Name="CNSSubAcctType" ColumnName="CNSSubAcctType" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="MuniDealerCompTrade" ColumnName="MuniDealerCompTrade" />
+          <ScalarProperty Name="ContraParticipantNum" ColumnName="ContraParticipantNum" />
+          <ScalarProperty Name="SecuritySubIssueType" ColumnName="SecuritySubIssueType" />
+          <ScalarProperty Name="ContraParticipant" ColumnName="ContraParticipant" />
+          <ScalarProperty Name="InternalAcctNum" ColumnName="InternalAcctNum" />
+          <ScalarProperty Name="DelivererAcctNum" ColumnName="DelivererAcctNum" />
+          <ScalarProperty Name="ReceiverAcctNum" ColumnName="ReceiverAcctNum" />
+          <ScalarProperty Name="SubBankAcctNum" ColumnName="SubBankAcctNum" />
+          <ScalarProperty Name="SettlementDate" ColumnName="SettlementDate" />
+          <ScalarProperty Name="ContraCUSIP" ColumnName="ContraCUSIP" />
+          <ScalarProperty Name="FractionalSharesInd" ColumnName="FractionalSharesInd" />
+          <ScalarProperty Name="AsofDate" ColumnName="AsofDate" />
+          <ScalarProperty Name="PTAInd" ColumnName="PTAInd" />
+          <ScalarProperty Name="DueBillInd" ColumnName="DueBillInd" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ThirdPartyNum" ColumnName="ThirdPartyNum" />
+          <ScalarProperty Name="TransType" ColumnName="TransType" />
+          <ScalarProperty Name="AcctType" ColumnName="AcctType" />
+          <ScalarProperty Name="CUSIPDesc" ColumnName="CUSIPDesc" />
+          <ScalarProperty Name="CMOTradeFactor" ColumnName="CMOTradeFactor" />
+          <ScalarProperty Name="ShareQuantity" ColumnName="ShareQuantity" />
+          <ScalarProperty Name="BankIdentifier" ColumnName="BankIdentifier" />
+          <ScalarProperty Name="BankNum" ColumnName="BankNum" />
+          <ScalarProperty Name="IPOBrokerAcctNum" ColumnName="IPOBrokerAcctNum" />
+          <ScalarProperty Name="IPOCorAcctNum" ColumnName="IPOCorAcctNum" />
+          <ScalarProperty Name="ATPOrigRef" ColumnName="ATPOrigRef" />
+          <ScalarProperty Name="SerialNum" ColumnName="SerialNum" />
+          <ScalarProperty Name="LoanDate" ColumnName="LoanDate" />
+          <ScalarProperty Name="AcctTypeNew" ColumnName="AcctTypeNew" />
+          <ScalarProperty Name="ActionCode" ColumnName="ActionCode" />
+          <ScalarProperty Name="TransTypeNew" ColumnName="TransTypeNew" />
+          <ScalarProperty Name="TradeDate" ColumnName="TradeDate" />
+          <ScalarProperty Name="CentsAmount" ColumnName="CentsAmount" />
+          <ScalarProperty Name="DollarAmount" ColumnName="DollarAmount" />
+          <ScalarProperty Name="JournalCode" ColumnName="JournalCode" />
+          <ScalarProperty Name="ControlNum" ColumnName="ControlNum" />
+          <ScalarProperty Name="ATPRecordAddress" ColumnName="ATPRecordAddress" />
+          <ScalarProperty Name="BatchVariable" ColumnName="BatchVariable" />
+          <ScalarProperty Name="BatchConstant" ColumnName="BatchConstant" />
+          <ScalarProperty Name="TransferAgentNum" ColumnName="TransferAgentNum" />
+          <ScalarProperty Name="FOSPInd" ColumnName="FOSPInd" />
+          <ScalarProperty Name="ABA" ColumnName="ABA" />
+          <ScalarProperty Name="FedSubAccount" ColumnName="FedSubAccount" />
+          <ScalarProperty Name="FedTPDelivererText" ColumnName="FedTPDelivererText" />
+          <ScalarProperty Name="FedTPReceiverText" ColumnName="FedTPReceiverText" />
+          <ScalarProperty Name="ParticipantID" ColumnName="ParticipantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PARTPOes">
+      <EntityTypeMapping TypeName="ADPDTCModel.PARTPO">
+        <MappingFragment StoreEntitySet="PARTPO">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MatchId" ColumnName="MatchId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MatchedBy" ColumnName="MatchedBy" />
+          <ScalarProperty Name="Ctpy" ColumnName="Ctpy" />
+          <ScalarProperty Name="DateofData" ColumnName="DateofData" />
+          <ScalarProperty Name="ParticipantID" ColumnName="ParticipantID" />
+          <ScalarProperty Name="CUSIP" ColumnName="CUSIP" />
+          <ScalarProperty Name="TradingSymbol" ColumnName="TradingSymbol" />
+          <ScalarProperty Name="PayeeCode" ColumnName="PayeeCode" />
+          <ScalarProperty Name="PayeePartNum" ColumnName="PayeePartNum" />
+          <ScalarProperty Name="OldPrice" ColumnName="OldPrice" />
+          <ScalarProperty Name="NewPrice" ColumnName="NewPrice" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="PayorPartNum" ColumnName="PayorPartNum" />
+          <ScalarProperty Name="ContractsNum" ColumnName="ContractsNum" />
+          <ScalarProperty Name="ReceiptRelease" ColumnName="ReceiptRelease" />
+          <ScalarProperty Name="PutCall" ColumnName="PutCall" />
+          <ScalarProperty Name="DollarAmt" ColumnName="DollarAmt" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="ActivityCode" ColumnName="ActivityCode" />
+          <ScalarProperty Name="ExercisePrice" ColumnName="ExercisePrice" />
+          <ScalarProperty Name="OpenCloseCode" ColumnName="OpenCloseCode" />
+          <ScalarProperty Name="CrossRefLineNum" ColumnName="CrossRefLineNum" />
+          <ScalarProperty Name="CrossRefDate" ColumnName="CrossRefDate" />
+          <ScalarProperty Name="BearingSerialNum" ColumnName="BearingSerialNum" />
+          <ScalarProperty Name="BankCustNameAcct" ColumnName="BankCustNameAcct" />
+          <ScalarProperty Name="Adjustments" ColumnName="Adjustments" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+          <ScalarProperty Name="SecurityDesc" ColumnName="SecurityDesc" />
+          <ScalarProperty Name="ShareQuantity" ColumnName="ShareQuantity" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SettlementCode" ColumnName="SettlementCode" />
+          <ScalarProperty Name="OptionsClearingCorp" ColumnName="OptionsClearingCorp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

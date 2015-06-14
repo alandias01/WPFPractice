@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPFPractice.Controls.ListBoxStuff"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ListBoxStuff" Height="300" Width="300">
+    <Grid>
+        <WrapPanel>
+            <ListBox ItemsSource="{Binding IDOList}" DisplayMemberPath="Cusip" SelectedValuePath="Id" SelectedValue="{Binding IDOID}">
+                
+            </ListBox>
+        </WrapPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ADPDTCModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ADPDTCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ADP_Raw" EntityType="ADPDTCModel.ADP_Raw" />
+    <EntitySet Name="DTFPARTs" EntityType="ADPDTCModel.DTFPART" />
+    <EntitySet Name="PARTPOes" EntityType="ADPDTCModel.PARTPO" />
+  </EntityContainer>
+  <EntityType Name="ADP_Raw">
+    <Key>
+      <PropertyRef Name="Tran_Id" />
+    </Key>
+    <Property Name="MatchType" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MatchId" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TradeId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MatchedBy" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Ctpy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Tran_Id" Type="Int32" Nullable="false" />
+    <Property Name="Source" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="Tran_Type" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="Acct_Number" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Check_Digit" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="Acct_Crcy" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="BatchCode" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="Entry_Code" Type="String" Nullable="false" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="Process_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Trade_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Settlement_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Currency" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="Source_Security_Id" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Alt_Security_Id" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Desc" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Cancel" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="BackDated" Type="Byte" Nullable="false" />
+    <Property Name="BackDated_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Cpty" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Accounting_Offset" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Offset_Trans" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="Record_Flag" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="Client_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="Account_InActive" Type="Boolean" />
+    <Property Name="Account_InActive_Date" Type="DateTime" />
+    <Property Name="RowColor" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="DTFPART">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MatchId" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MatchedBy" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DateofData" Type="DateTime" />
+    <Property Name="SubFunction" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DataTypeReq" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="SystemOrigCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="StatusCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="VerControlNum" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TransOrigSource" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="AcctNum" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="SettlementCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ParticipantNum" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="CUSIP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="CNSSubAcctType" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ReasonCode" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="MuniDealerCompTrade" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ContraParticipantNum" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="SecuritySubIssueType" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="ContraParticipant" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="InternalAcctNum" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="DelivererAcctNum" Type="String" MaxLength="17" Unicode="false" FixedLength="false" />
+    <Property Name="ReceiverAcctNum" Type="String" MaxLength="17" Unicode="false" FixedLength="false" />
+    <Property Name="SubBankAcctNum" Type="String" MaxLength="17" Unicode="false" FixedLength="false" />
+    <Property Name="SettlementDate" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="ContraCUSIP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="FractionalSharesInd" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="AsofDate" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="PTAInd" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DueBillInd" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="Remarks" Type="String" MaxLength="210" Unicode="false" FixedLength="false" />
+    <Property Name="ThirdPartyNum" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TransType" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="AcctType" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="CUSIPDesc" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CMOTradeFactor" Type="String" MaxLength="14" Unicode="false" FixedLength="false" />
+    <Property Name="ShareQuantity" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="BankIdentifier" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="BankNum" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="IPOBrokerAcctNum" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="IPOCorAcctNum" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="ATPOrigRef" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="SerialNum" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="LoanDate" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="AcctTypeNew" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ActionCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TransTypeNew" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TradeDate" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="CentsAmount" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="DollarAmount" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="JournalCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ControlNum" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="ATPRecordAddress" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="BatchVariable" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="BatchConstant" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TransferAgentNum" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FOSPInd" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ABA" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="FedSubAccount" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="FedTPDelivererText" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="FedTPReceiverText" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="ParticipantID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PARTPO">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MatchId" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MatchedBy" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Ctpy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DateofData" Type="DateTime" />
+    <Property Name="ParticipantID" Type="Int32" />
+    <Property Name="CUSIP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="TradingSymbol" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="PayeeCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PayeePartNum" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="OldPrice" Type="Decimal" Precision="20" Scale="8" />
+    <Property Name="NewPrice" Type="Decimal" Precision="20" Scale="8" />
+    <Property Name="ExpireDate" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="PayorPartNum" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="ContractsNum" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="ReceiptRelease" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PutCall" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DollarAmt" Type="Decimal" Precision="20" Scale="8" />
+    <Property Name="ReasonCode" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ActivityCode" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="ExercisePrice" Type="Decimal" Precision="20" Scale="8" />
+    <Property Name="OpenCloseCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CrossRefLineNum" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="CrossRefDate" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="BearingSerialNum" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="BankCustNameAcct" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Adjustments" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="ContractDate" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="SecurityDesc" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="ShareQuantity" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Comments" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="SettlementCode" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="OptionsClearingCorp" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

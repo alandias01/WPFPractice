@@ -1,0 +1,27 @@
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\obj\Debug\ADPDTC.Data.Properties.Resources.resources
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll.config
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\bin\Debug\ADPDTC.Data.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\obj\Debug\ADPDTC.Data.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WpfADPDTCAtt01\ADPDTC.Data\obj\Debug\ADPDTC.Data.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll.config
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.Properties.Resources.resources
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.pdb
+C:\dev\wpf\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll.config
+C:\dev\wpf\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll
+C:\dev\wpf\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.pdb
+C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.Properties.Resources.resources
+C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.read.1.tlog
+C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.write.1.tlog
+C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.dll
+C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.pdb

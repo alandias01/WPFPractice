@@ -1,0 +1,115 @@
+﻿<Window x:Class="WPFPractice.Triggers.T01"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="T01" Height="300" Width="300"
+        xmlns:local="clr-namespace:WPFPractice.Triggers">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            
+            <Style x:Key="T01" TargetType="Button">
+                <Setter Property="Background" Value="Red" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="FontSize" Value="20"/>
+                        
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+            <Style x:Key="T02" TargetType="Button">
+                <Style.Triggers>
+                    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard >
+                                <Storyboard>
+                                    <DoubleAnimation AutoReverse="True"  Storyboard.TargetProperty="Width" To="200" Duration="0:0:2" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>                    
+                </Style.Triggers>
+            </Style>
+            
+            <Style x:Key="T03" TargetType="Button">
+                <Style.Triggers>
+                    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <!--How do we just change a property like property triggers?-->
+                                </Storyboard>
+                            </BeginStoryboard> 
+                            
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    
+                </Style.Triggers>
+            </Style>
+            
+            <!-- Makes textbox bigger-->
+            <ScaleTransform x:Key="mnuBigScale" ScaleX="2" ScaleY="2"/>
+            <OuterGlowBitmapEffect x:Key="mnuBitmapEffect"/>
+            
+            <Style x:Key="TxtBx" TargetType="TextBox">
+                <Style.Triggers>
+                    <Trigger Property="Text" Value="">
+                        <Setter Property="Background" Value="yellow"/>
+                        <Setter Property="BitmapEffect" Value="{StaticResource mnuBitmapEffect}"/>
+                        <Setter Property="LayoutTransform" Value="{StaticResource mnuBigScale}"/>
+                    </Trigger>
+                </Style.Triggers>
+                                    
+            </Style>
+            
+            <Style x:Key="DT1" TargetType="TextBox">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding H1.HappyStatus}" Value="good">
+                        <Setter Property="Background" Value="blue"/>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding H1.HappyStatus}" Value="bad">
+                        <Setter Property="Background" Value="red"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+            
+            <local:MyValueConverter x:Key="xval" />
+            <Style x:Key="DT2" TargetType="TextBox">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding H1.Age, Converter={StaticResource xval}}" Value="True">
+                        <Setter Property="Background" Value="green"/>
+                    </DataTrigger>
+                    
+                </Style.Triggers>
+            </Style>
+
+        </Grid.Resources>
+
+        <WrapPanel Grid.Row="0" x:Name="WP1">
+            <Button Content="T01" Width="100"  Height="50" Style="{StaticResource T01}"/>
+            
+            <Button Content="T02" Width="100"  Height="50" Style="{StaticResource T02}" />
+
+            <Button Content="T03" Width="100"  Height="50" Style="{StaticResource T01}"/>
+                
+            
+
+            <TextBox Text="ALAN" Style="{StaticResource TxtBx}" Width="100" Height="20" Margin="3"/>
+                        
+        </WrapPanel>
+
+        <WrapPanel Grid.Row="1" x:Name="WP2" Orientation="Vertical">
+            <Label Content="Below uses simple data trigger"/>
+            <TextBox Text="{Binding H1.Name}" Width="150" Height="20" Style="{StaticResource DT1}" HorizontalAlignment="Left"/>
+            <Label Content="Below uses a data trigger which can use logic using a value converter"/>
+            <TextBox Text="{Binding H1.Age, UpdateSourceTrigger=PropertyChanged}" Width="150" Height="20" Style="{StaticResource DT2}" HorizontalAlignment="Left"/>
+            
+        </WrapPanel>
+                    
+        
+        
+    </Grid>
+</Window>

@@ -1,0 +1,252 @@
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\bin\Debug\GarbageWpf01.exe
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\bin\Debug\GarbageWpf01.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\CommandWindow.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\MainWindow.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\CommandWindow.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\App.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\GarbageWpf01_MarkupCompile.cache
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\GarbageWpf01.g.resources
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\GarbageWpf01.Properties.Resources.resources
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\GarbageWpf01.exe
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\GarbageWpf01\GarbageWpf01\obj\x86\Debug\GarbageWpf01.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.exe
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\GarbageWpf01.exe
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\GarbageWpf01.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\App.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01_MarkupCompile.cache
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.g.resources
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\WPFPractice.Properties.Resources.resources
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\Stock.Data.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\Stock.Data.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\WPFPractice.Resource1.resources
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\App.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\INotify\MainWindow.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\INotify\MainWindow.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI00.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI00.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI01Style.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI00Style.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\GarbageWpf01.exe.config
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\TreeViewControl\WPFTree.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\TreeViewControl\WPFTree.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01_MarkupCompile.lref
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingStaticItemssource.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingStaticItemssource.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetail.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetail.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\BottomRight.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\LeftMenu.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\TopRight.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\BottomRight.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\LeftMenu.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\MainForm.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\TopRight.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\MainForm.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\ATool.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\BTool.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\DT01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\ATool.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\BTool.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\DT01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplate01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplate01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetailWithListView.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetailWithListView.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\T01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\T01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ToolBar.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ToolBar.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\SL.Data.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\SL.Data.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w02.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w02.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\FontPolyline.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\FontPolyline.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingViewModel.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingViewModel.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ListBoxStuff.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ListBoxStuff.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w03.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w03.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\Copy of w03.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\Copy of w03.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Transforms\Transform01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Transforms\Transform01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\Anim01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\Anim01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\datagridValidation.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\datagridValidation.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplateSelector.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplateSelector.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\Utils.dll
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\Utils.pdb
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\AnimAndTrigger.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\AnimAndTrigger.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV2.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV2.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\ValueConverter01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\ValueConverter01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\OpacityWindowAndMove.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\OpacityWindowAndMove.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Datagrid02.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Datagrid02.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT02.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT02.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Threads\Thread01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Threads\Thread01.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\DatagridEventToCommand.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\DatagridEventToCommand.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Rectang.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Rectang.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\test.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\test.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\DragDrop\DragAndDrop.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\DragDrop\DragAndDrop.g.cs
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Shapes\Shape01.baml
+C:\Users\Alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Shapes\Shape01.g.cs
+G:\Projects\wpf\WPFPractice\WPFPractice\bin\Debug\GarbageWpf01.exe.config
+G:\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.exe
+G:\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.pdb
+C:\Users\alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Commands\MainWindow.baml
+C:\Users\alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle2.baml
+C:\Users\alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Commands\MainWindow.g.cs
+C:\Users\alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle2.g.cs
+C:\Users\alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Xaml\mainwindow.baml
+C:\Users\alan\Documents\Visual Studio 2010\Projects\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Xaml\mainwindow.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\GarbageWpf01.exe.config
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.exe
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.pdb
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\GarbageWpf01.exe
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\GarbageWpf01.pdb
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\SL.Data.dll
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\Stock.Data.dll
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\SL.Data.pdb
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\Stock.Data.pdb
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\Anim01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\OpacityWindowAndMove.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetail.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetailWithListView.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV2.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\BottomRight.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\LeftMenu.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\TopRight.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Commands\MainWindow.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\datagridValidation.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ListBoxStuff.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Rectang.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ToolBar.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\DatagridEventToCommand.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\DragDrop\DragAndDrop.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Shapes\Shape01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle2.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI01Style.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI00Style.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\INotify\MainWindow.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI00.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT02.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplate01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\ATool.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\BTool.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\test.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Threads\Thread01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Transforms\Transform01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\TreeViewControl\WPFTree.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\Copy of w03.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w02.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\FontPolyline.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w03.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\App.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\Anim01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Animations\OpacityWindowAndMove.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingStaticItemssource.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingViewModel.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetail.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\MasterDetailWithListView.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CollectionView\CV2.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\BottomRight.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\LeftMenu.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\MainForm.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\TopRight.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Commands\MainWindow.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Datagrid02.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\datagridValidation.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ListBoxStuff.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Rectang.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\ToolBar.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\DatagridEventToCommand.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\DragDrop\DragAndDrop.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Shapes\Shape01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\DatagridStyle2.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\INotify\MainWindow.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\styles\UI00.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\ControlTemplate\CT02.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplate01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplateSelector.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\ATool.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\BTool.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\DT01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\test.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Threads\Thread01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Transforms\Transform01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\TreeViewControl\WPFTree.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\T01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\ValueConverter01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\Copy of w03.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w01.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w02.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\FontPolyline.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\w03.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Xaml\mainwindow.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\App.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01_MarkupCompile.cache
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01_MarkupCompile.lref
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingStaticItemssource.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Binding\BindingViewModel.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\CombineUserControls\MainForm.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Controls\Datagrid02.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\DataTemplateSelector.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Templates\DataTemplate\Technique01\DT01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\T01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\ValueConverter01.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Xaml\mainwindow.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GarbageWpf01.g.resources
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\WPFPractice.Properties.Resources.resources
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\WPFPractice.Resource1.resources
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\WPFUtils.dll
+C:\dev\wpf\WPFPractice\WPFPractice\bin\Debug\WPFUtils.pdb
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\NiceBackground.baml
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\UI\NiceBackground.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\ValueConverter02.g.cs
+C:\dev\wpf\WPFPractice\WPFPractice\obj\x86\Debug\Triggers\ValueConverter02.baml

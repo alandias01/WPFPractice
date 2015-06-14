@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPFPractice.Xaml.mainwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:loc="clr-namespace:WPFPractice.Xaml"
+        Title="mainwindow" Height="300" Width="300">
+    <Grid>
+        <Grid.Resources>
+            <loc:MyData Age="5" Name="Alan" x:Key="mydataresource" />            
+        </Grid.Resources>
+        <Grid.DataContext>
+            <Binding Source="{StaticResource mydataresource}" />
+        </Grid.DataContext>
+        <Button Content="{Binding Name}" Height="23" HorizontalAlignment="Left" Margin="23,27,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
+    </Grid>
+</Window>

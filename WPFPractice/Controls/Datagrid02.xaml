@@ -1,0 +1,81 @@
+﻿<Window x:Class="WPFPractice.Controls.Datagrid02"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:LocControls="clr-namespace:WPFPractice.Controls"
+        Title="Datagrid02" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <Style x:Key="DataGridCellStyle" TargetType="{x:Type DataGridCell}">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderBrush" Value="Transparent" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type DataGridCell}">
+                            <Border Background="Transparent" 
+                                      BorderBrush="{TemplateBinding BorderBrush}"  
+                                      BorderThickness="0" 
+                                      SnapsToDevicePixels="True">
+                                <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </Grid.Resources>
+
+        
+        <DataGrid Grid.Row="1" x:Name="DGV1" >
+            <DataGrid.CellStyle>
+                <Style  TargetType="{x:Type DataGridCell}">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="BorderBrush" Value="Transparent" />
+                    <Setter Property="BorderThickness" Value="0" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                <Border Background="Transparent" 
+                                      BorderBrush="{TemplateBinding BorderBrush}"  
+                                      BorderThickness="1" 
+                                      SnapsToDevicePixels="True">
+                                    <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                            
+                       
+                        
+                    </Setter>
+                    
+                </Style>
+                </DataGrid.CellStyle>
+        </DataGrid>
+    </Grid>
+</Window>
+
+
+<!-- If any row has price equal 109, row will turn red, once it changes, goes back to original color
+<Grid.Resources>
+    <LocControls:PriceValidator x:Key="PV" />
+</Grid.Resources>
+<DataGrid.CellStyle>
+    <Style TargetType="{x:Type DataGridCell}" >
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Price, Converter={StaticResource PV}}" Value="True">
+                <Setter Property="Background" Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</DataGrid.CellStyle>
+-->    
+    
+    
+    
+    
+    
+    

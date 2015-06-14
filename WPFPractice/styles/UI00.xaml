@@ -1,0 +1,12 @@
+﻿<Window x:Class="WPFPractice.WindowStyling"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowStyling" Height="409" Width="583" Background="{StaticResource WinBackground}" >
+    
+    <Grid>
+        <DataGrid Background="#FF363434" RowBackground="#FF363434" Foreground="#FFD4872C"  AutoGenerateColumns="True" Margin="149,77,12,12" Name="dataGridPositions" HeadersVisibility="Column" />
+        <Button FontSize="20" Background="{StaticResource WinBackground}" Content="Add" Height="35" HorizontalAlignment="Left" Margin="12,77,0,0" Name="buttonAddSymbol" VerticalAlignment="Top" Width="131" Click="button1_Click" />
+        <TextBlock FontSize="26"  Height="41" HorizontalAlignment="Left" Margin="12,12,0,0" Name="textBlock1" Text="Position Viewer" VerticalAlignment="Top" Width="183" Foreground="#FFD4872C" />
+        <TextBlock FontSize="26" Foreground="White" Height="41" HorizontalAlignment="Left" Margin="201,12,0,0" Name="textBlock2" Text="RT" VerticalAlignment="Top" Width="43" />
+    </Grid>
+</Window>
