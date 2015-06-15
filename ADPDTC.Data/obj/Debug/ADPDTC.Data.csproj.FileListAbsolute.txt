@@ -25,3 +25,12 @@ C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.read.1.tlog
 C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.write.1.tlog
 C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.dll
 C:\dev\wpf\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.pdb
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll.config
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.dll
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\bin\Debug\ADPDTC.Data.pdb
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.Properties.Resources.resources
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.read.1.tlog
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\obj\Debug\GenerateResource.write.1.tlog
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.dll
+C:\dev\WPFProj\WPFPractice\ADPDTC.Data\obj\Debug\ADPDTC.Data.pdb

@@ -39,6 +39,18 @@
     <Reference Include="GalaSoft.MvvmLight.Extras.WPF4, Version=4.0.23.37706, Culture=neutral, PublicKeyToken=1673db7d5906b0ad, processorArchitecture=MSIL" />
     <Reference Include="GalaSoft.MvvmLight.WPF4, Version=4.0.23.37706, Culture=neutral, PublicKeyToken=63eb5c012e0b3c1c, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Prism, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -186,6 +198,9 @@
     </Compile>
     <Compile Include="Triggers\ValueConverter02.xaml.cs">
       <DependentUpon>ValueConverter02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIPractice\Prac01.xaml.cs">
+      <DependentUpon>Prac01.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Copy of w03.xaml.cs">
       <DependentUpon>Copy of w03.xaml</DependentUpon>
@@ -384,6 +399,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UIPractice\Prac01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UI\Copy of w03.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -447,10 +466,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\wpfutils\WPFUtils.csproj">
-      <Project>{04775AAA-EE41-4E0D-91F8-147A9ADC722C}</Project>
-      <Name>WPFUtils</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\SL.Data\SL.Data.csproj">
       <Project>{954B6366-0970-41DC-A050-D0A705921496}</Project>
       <Name>SL.Data</Name>
@@ -458,6 +473,10 @@
     <ProjectReference Include="..\..\Stock.Data\Stock.Data.csproj">
       <Project>{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}</Project>
       <Name>Stock.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wpfutils\WPFUtils.csproj">
+      <Project>{04775AAA-EE41-4E0D-91F8-147A9ADC722C}</Project>
+      <Name>WPFUtils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

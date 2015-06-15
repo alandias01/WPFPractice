@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Data", "..\SL.Data\SL.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADPDTC.Data", "ADPDTC.Data\ADPDTC.Data.csproj", "{A430FC42-BD4D-4FFB-AF85-EFB8A4ED9D02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUtils", "..\..\wpfutils\WPFUtils.csproj", "{04775AAA-EE41-4E0D-91F8-147A9ADC722C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUtils", "..\wpfutils\WPFUtils.csproj", "{04775AAA-EE41-4E0D-91F8-147A9ADC722C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
