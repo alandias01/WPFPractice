@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using Microsoft.Practices.Prism.ViewModel;
 
 namespace WPFPractice
-{    
-    public class Employee
+{
+    public class Employee : NotificationObject
     {
         string name;
         public string Name
@@ -34,15 +35,15 @@ namespace WPFPractice
             return new ObservableCollection<Employee> { new Employee("alan", 1), new Employee("Ben", 2), new Employee("Kyle", 3), new Employee("Stan", 4) };
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void RaisePropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
+        //protected void RaisePropertyChanged(string propertyName)
+        //{
+        //    if (PropertyChanged != null)
+        //    {
+        //        PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        //    }
+        //}
 
 
     }

@@ -15,7 +15,7 @@ namespace WPFPractice
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            new WPFPractice.Prac01.MainWindow().Show();
+            new WPFPractice.Commands.MainWindow().Show();
         }
              
     }

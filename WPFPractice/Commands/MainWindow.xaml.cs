@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using WPFUtils;
+using System.Collections;
 
 namespace WPFPractice.Commands
 {
@@ -34,6 +35,9 @@ namespace WPFPractice.Commands
         public ObservableCollection<Employee> EmpList { get; set; }
 
         public Command<Employee> ShowCurrentCommand { get; set; }
+        public Command ButtonUpdateCommand { get; set; }
+        public Command<IList> ShowSelectedItemsCommand1 { get; set; }
+        public Command<IList> ShowSelectedItemsCommand2 { get; set; }
 
         public Employee currentItem;
 
@@ -53,7 +57,9 @@ namespace WPFPractice.Commands
         {
             EmpList = Employee.Load();
             ShowCurrentCommand = new Command<Employee>(add, CanAdd);
-
+            ButtonUpdateCommand = new Command(update);
+            ShowSelectedItemsCommand1 = new Command<IList>(ShowSelectedItems1);
+            ShowSelectedItemsCommand2 = new Command<IList>(ShowSelectedItems2);
         }
 
         public void add(Employee e)
@@ -72,6 +78,16 @@ namespace WPFPractice.Commands
                 return CurrentItem.Name.ToLower() == "alan";
         }
 
+        public void update(object o)
+        {
+            foreach (var item in EmpList)
+            {
+                item.Age += 1;
+            }
+        }
+
+
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void RaisePropertyChanged(string propertyName)
@@ -80,6 +96,16 @@ namespace WPFPractice.Commands
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        public void ShowSelectedItems1(IList s)
+        {
+ 
+        }
+
+        public void ShowSelectedItems2(IList s)
+        {
+
         }
     }
 }

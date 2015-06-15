@@ -4,7 +4,12 @@
         Title="MainWindow" Height="299" Width="671">
     <Grid>
         <DataGrid SelectedItem="{Binding CurrentItem, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding EmpList}" AutoGenerateColumns="True" Margin="12,71,12,12" Name="dgEmployees"  />
-        <Button Content="Show current" Command="{Binding ShowCurrentCommand}" CommandParameter="{Binding SelectedItem, ElementName=dgEmployees}" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="buttonShowCurrent" VerticalAlignment="Top" Width="89" />
-        <Button Content="Update" Height="23" HorizontalAlignment="Left" Margin="122,12,0,0" Name="buttonUpdate" VerticalAlignment="Top" Width="75" />
+
+        <Button Command="{Binding ShowCurrentCommand}" CommandParameter="{Binding SelectedItem, ElementName=dgEmployees}" Content="Show current"  Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="buttonShowCurrent" VerticalAlignment="Top" Width="89" />
+        <Button Command="{Binding ButtonUpdateCommand}" Content="Update" Height="23" HorizontalAlignment="Left" Margin="122,12,0,0" Name="buttonUpdate" VerticalAlignment="Top" Width="75" />
+        <Button  Command="{Binding ShowSelectedItemsCommand1}" CommandParameter="{Binding SelectedItems, ElementName=dgEmployees}" Content="SelectedItems1" Height="23" HorizontalAlignment="Left" Margin="219,12,0,0" Name="button1" VerticalAlignment="Top" Width="100" />
+        <Button Command="{Binding ShowSelectedItemsCommand2}" CommandParameter="{Binding SelectedItems, ElementName=dgEmployees}" Content="SelectedItems2" Height="23" HorizontalAlignment="Left" Margin="342,12,0,0" Name="button2" VerticalAlignment="Top" Width="100" />
+        
+
     </Grid>
 </Window>
