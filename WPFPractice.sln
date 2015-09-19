@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPractice", "WPFPractice\WPFPractice.csproj", "{E6891472-3175-498C-9DF5-D92308AD89A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock.Data", "..\Stock.Data\Stock.Data.csproj", "{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.Data", "..\SL.Data\SL.Data.csproj", "{954B6366-0970-41DC-A050-D0A705921496}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock.Data", "..\..\C#\WPFProjects\Stock.Data\Stock.Data.csproj", "{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADPDTC.Data", "ADPDTC.Data\ADPDTC.Data.csproj", "{A430FC42-BD4D-4FFB-AF85-EFB8A4ED9D02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUtils", "..\wpfutils\WPFUtils.csproj", "{04775AAA-EE41-4E0D-91F8-147A9ADC722C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUtils", "..\..\C#\WPFProjects\wpfutils\WPFUtils.csproj", "{04775AAA-EE41-4E0D-91F8-147A9ADC722C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,16 +39,6 @@ Global
 		{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}.Release|x86.ActiveCfg = Release|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Release|Any CPU.Build.0 = Release|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{954B6366-0970-41DC-A050-D0A705921496}.Release|x86.ActiveCfg = Release|Any CPU
 		{A430FC42-BD4D-4FFB-AF85-EFB8A4ED9D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A430FC42-BD4D-4FFB-AF85-EFB8A4ED9D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A430FC42-BD4D-4FFB-AF85-EFB8A4ED9D02}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU

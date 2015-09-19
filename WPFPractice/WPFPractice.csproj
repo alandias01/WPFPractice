@@ -122,9 +122,6 @@
     <Compile Include="Controls\datagridValidation.xaml.cs">
       <DependentUpon>datagridValidation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ListBoxStuff.xaml.cs">
-      <DependentUpon>ListBoxStuff.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Rectang.xaml.cs">
       <DependentUpon>Rectang.xaml</DependentUpon>
     </Compile>
@@ -181,14 +178,8 @@
     <Compile Include="test.xaml.cs">
       <DependentUpon>test.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Threads\Thread01.xaml.cs">
-      <DependentUpon>Thread01.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Transforms\Transform01.xaml.cs">
       <DependentUpon>Transform01.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TreeViewControl\WPFTree.xaml.cs">
-      <DependentUpon>WPFTree.xaml</DependentUpon>
     </Compile>
     <Compile Include="Triggers\T01.xaml.cs">
       <DependentUpon>T01.xaml</DependentUpon>
@@ -202,9 +193,6 @@
     <Compile Include="UIPractice\Prac01.xaml.cs">
       <DependentUpon>Prac01.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Copy of w03.xaml.cs">
-      <DependentUpon>Copy of w03.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\NiceBackground.xaml.cs">
       <DependentUpon>NiceBackground.xaml</DependentUpon>
     </Compile>
@@ -216,9 +204,6 @@
     </Compile>
     <Compile Include="UI\FontPolyline.xaml.cs">
       <DependentUpon>FontPolyline.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\w03.xaml.cs">
-      <DependentUpon>w03.xaml</DependentUpon>
     </Compile>
     <Compile Include="Xaml\mainwindow.xaml.cs">
       <DependentUpon>mainwindow.xaml</DependentUpon>
@@ -280,10 +265,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\datagridValidation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Controls\ListBoxStuff.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -375,15 +356,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Threads\Thread01.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Transforms\Transform01.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TreeViewControl\WPFTree.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -403,10 +376,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\Copy of w03.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UI\NiceBackground.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -420,10 +389,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\FontPolyline.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UI\w03.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -466,15 +431,11 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SL.Data\SL.Data.csproj">
-      <Project>{954B6366-0970-41DC-A050-D0A705921496}</Project>
-      <Name>SL.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Stock.Data\Stock.Data.csproj">
+    <ProjectReference Include="..\..\..\C#\WPFProjects\Stock.Data\Stock.Data.csproj">
       <Project>{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}</Project>
       <Name>Stock.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\wpfutils\WPFUtils.csproj">
+    <ProjectReference Include="..\..\..\C#\WPFProjects\wpfutils\WPFUtils.csproj">
       <Project>{04775AAA-EE41-4E0D-91F8-147A9ADC722C}</Project>
       <Name>WPFUtils</Name>
     </ProjectReference>
@@ -491,7 +452,9 @@
   <ItemGroup>
     <Resource Include="UI\img\bg01.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Threads\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
