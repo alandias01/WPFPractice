@@ -15,7 +15,8 @@ namespace WPFPractice
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            new WPFPractice.Commands.MainWindow().Show();
+            //new WPFPractice.Commands.MainWindow().Show();
+            new WPFPractice.controls.DatagridEventToCommand().Show();
         }
              
     }

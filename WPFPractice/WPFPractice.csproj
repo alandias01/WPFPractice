@@ -431,16 +431,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\C#\WPFProjects\Stock.Data\Stock.Data.csproj">
-      <Project>{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}</Project>
-      <Name>Stock.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\C#\WPFProjects\wpfutils\WPFUtils.csproj">
-      <Project>{04775AAA-EE41-4E0D-91F8-147A9ADC722C}</Project>
-      <Name>WPFUtils</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Controls\search.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -454,6 +444,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Threads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Stock.Data\Stock.Data.csproj">
+      <Project>{23E70AF7-0EA0-4F8A-9D12-E2A3B66428DF}</Project>
+      <Name>Stock.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wpfutils\WPFUtils.csproj">
+      <Project>{04775AAA-EE41-4E0D-91F8-147A9ADC722C}</Project>
+      <Name>WPFUtils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
