@@ -16,7 +16,11 @@ namespace WPFPractice
         {
             base.OnStartup(e);
             //new WPFPractice.Commands.MainWindow().Show();
-            new WPFPractice.controls.DatagridEventToCommand().Show();
+            //new WPFPractice.Commands.DatagridEventToCommand().Show();
+
+            new IOC();
+            
+            //Application.Current.Shutdown();
         }
              
     }

@@ -134,18 +134,19 @@
     <Compile Include="Controls\Rectang.xaml.cs">
       <DependentUpon>Rectang.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ToolBar.xaml.cs">
+    <Compile Include="Controls\Toolbar\ToolBar.xaml.cs">
       <DependentUpon>ToolBar.xaml</DependentUpon>
     </Compile>
     <Compile Include="DragDrop\DragAndDrop.xaml.cs">
       <DependentUpon>DragAndDrop.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IOC.cs" />
     <Compile Include="Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\DatagridEventToCommand.xaml.cs">
+    <Compile Include="Commands\DatagridEventToCommand.xaml.cs">
       <DependentUpon>DatagridEventToCommand.xaml</DependentUpon>
     </Compile>
     <Compile Include="Shapes\Shape01.xaml.cs">
@@ -281,11 +282,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\ToolBar.xaml">
+    <Page Include="Controls\Toolbar\ToolBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\DatagridEventToCommand.xaml">
+    <Page Include="Commands\DatagridEventToCommand.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -440,13 +441,13 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Controls\search.ico" />
+    <Resource Include="Controls\Toolbar\search.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Controls\win8.ico" />
+    <Resource Include="Controls\Toolbar\win8.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Controls\gmail.ico" />
+    <Resource Include="Controls\Toolbar\gmail.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="UI\img\bg01.jpg" />

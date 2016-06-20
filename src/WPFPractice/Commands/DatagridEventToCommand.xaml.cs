@@ -17,7 +17,7 @@ using GalaSoft.MvvmLight.Command;
 using System.Collections;
 using System.Windows.Documents;
 
-namespace WPFPractice.controls
+namespace WPFPractice.Commands
 {
     /// <summary>
     /// Interaction logic for DatagridStyle.xaml
