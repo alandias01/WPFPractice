@@ -43,7 +43,7 @@ namespace WPFPractice
             }
 
 
-            new IOC();
+            new ViewModelLocator().Show();
 
 
 

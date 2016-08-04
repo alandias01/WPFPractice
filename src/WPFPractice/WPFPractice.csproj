@@ -215,6 +215,9 @@
     <Compile Include="UI\FontPolyline.xaml.cs">
       <DependentUpon>FontPolyline.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelLocator.xaml.cs">
+      <DependentUpon>ViewModelLocator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Xaml\mainwindow.xaml.cs">
       <DependentUpon>mainwindow.xaml</DependentUpon>
     </Compile>
@@ -399,6 +402,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\FontPolyline.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewModelLocator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
