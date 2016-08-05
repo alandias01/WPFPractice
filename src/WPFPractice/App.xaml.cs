@@ -43,7 +43,7 @@ namespace WPFPractice
             }
 
 
-            new ViewModelLocator().Show();
+            new DGHighLightCell().Show();
 
 
 

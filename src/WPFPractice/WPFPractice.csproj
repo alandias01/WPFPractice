@@ -121,6 +121,9 @@
       <DependentUpon>TopRight.xaml</DependentUpon>
     </Compile>
     <Compile Include="Commands\CommandWindowVM2.cs" />
+    <Compile Include="Controls\DGHighLightCell.xaml.cs">
+      <DependentUpon>DGHighLightCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="Commands\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -280,6 +283,10 @@
     <Page Include="Controls\datagridValidation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DGHighLightCell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\Rectang.xaml">
       <SubType>Designer</SubType>
