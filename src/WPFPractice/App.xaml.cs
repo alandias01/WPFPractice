@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Windows;
+using WPFPractice.DependencyProperty;
 
 namespace WPFPractice
 {
@@ -43,7 +44,7 @@ namespace WPFPractice
             }
 
 
-            new DGHighLightCell().Show();
+            new DependencyWindow().Show();
 
 
 
