@@ -5,6 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 using WPFPractice.DependencyProperties;
+using Microsoft.Practices.Unity;
+using Microsoft.Practices.Prism.UnityExtensions;
+using Microsoft.Practices.Prism.Events;
 
 namespace WPFPractice
 {
@@ -21,8 +24,18 @@ namespace WPFPractice
             Windwo1 w=new window()
             app.run(w)
         */
+        public App()
+        {            
+            IA1 a1 = new A1(new B1());
+            //or
+                        
+            UnityManager.container.RegisterType<IB1, B1>();
+            UnityManager.container.RegisterType<IA1, A1>();
+            
+            var a2 = UnityManager.container.Resolve<IA1>();
 
-
+            UnityManager.container.RegisterType<IEventAggregator, EventAggregator>();
+        }
         //Here you can handle application event
         //every event has a method that raises them "on + eventname"
 
@@ -42,12 +55,9 @@ namespace WPFPractice
 
                 }
             }
-
-
+            
             new DependencyWindow().Show();
-
-
-
+            
             //you can get access to the current application instance from anywhere
             //using application.current
 
@@ -66,9 +76,21 @@ namespace WPFPractice
             //If you want to communicate btwn windows
             //You can create a list here and access from other windows
             //((App)Application.Current).DTCMessages.Add("MSG01");
-        }
-             
+        }             
     }
 
+    interface IB1 { }
+    class B1 : IB1 { }
+
+    interface IA1 { }
+    class A1 : IA1
+    {
+        IB1 b1;
+        public A1(IB1 b1) { this.b1 = b1; }
+    }
     
+    public class UnityManager
+    {
+        public static IUnityContainer container = new UnityContainer();
+    }
 }

@@ -152,6 +152,7 @@
     <Compile Include="DragDrop\DragAndDrop.xaml.cs">
       <DependentUpon>DragAndDrop.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EventAggregation.cs" />
     <Compile Include="IOC.cs" />
     <Compile Include="Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
