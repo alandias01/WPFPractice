@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WPFPractice</RootNamespace>
     <AssemblyName>GarbageWpf01</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -127,11 +127,12 @@
     <Compile Include="Controls\DGHighLightCell.xaml.cs">
       <DependentUpon>DGHighLightCell.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DependencyProperty\DependencyWindow.xaml.cs">
+    <Compile Include="DependencyProperties\DependencyWindow.xaml.cs">
       <DependentUpon>DependencyWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DependencyProperty\DependencyWindowViewModel.cs" />
-    <Compile Include="DependencyProperty\SmartDataGrid.cs" />
+    <Compile Include="DependencyProperties\DependencyWindowViewModel.cs" />
+    <Compile Include="DependencyProperties\MvvmBehaviors.cs" />
+    <Compile Include="DependencyProperties\SmartDataGrid.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Commands\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -308,11 +309,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DependencyProperty\DependencyWindow.xaml">
+    <Page Include="DependencyProperties\DependencyWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DependencyProperty\DependencyWindowStyle.xaml">
+    <Page Include="DependencyProperties\SmartDataGridStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

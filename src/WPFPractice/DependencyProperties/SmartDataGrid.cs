@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace WPFPractice.DependencyProperty
+namespace WPFPractice.DependencyProperties
 {
     public class SmartDataGrid : DataGrid
     {
