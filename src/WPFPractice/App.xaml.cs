@@ -56,7 +56,7 @@ namespace WPFPractice
                 }
             }
             
-            new DependencyWindow().Show();
+            new Threads.Thread01().Show();
             
             //you can get access to the current application instance from anywhere
             //using application.current

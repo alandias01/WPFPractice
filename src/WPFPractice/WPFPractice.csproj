@@ -201,6 +201,9 @@
     <Compile Include="test.xaml.cs">
       <DependentUpon>test.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Threads\Thread01.xaml.cs">
+      <DependentUpon>Thread01.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Transforms\Transform01.xaml.cs">
       <DependentUpon>Transform01.xaml</DependentUpon>
     </Compile>
@@ -394,6 +397,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Threads\Thread01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Transforms\Transform01.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -484,9 +491,7 @@
   <ItemGroup>
     <Resource Include="UI\img\bg01.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Threads\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Stock.Data\Stock.Data.csproj">
       <Project>{9241A964-1CF6-4E53-A56C-8A73CF2F4FDD}</Project>
