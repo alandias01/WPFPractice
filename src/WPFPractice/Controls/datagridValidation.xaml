@@ -1,8 +1,7 @@
 ﻿<Window x:Class="WPFPractice.Controls.datagridValidation"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="datagridValidation" Height="300" Width="300"
-        xmlns:i="clr-namespace:Microsoft.Expression.Interactivity;assembly=Microsoft.Expression.Interactions"
+        Title="datagridValidation" Height="300" Width="300"        
         >
     <Grid>
         <StackPanel DataContext="{Binding MS}">
