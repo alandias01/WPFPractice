@@ -492,13 +492,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Stock.Data\Stock.Data.csproj">
-      <Project>{9241A964-1CF6-4E53-A56C-8A73CF2F4FDD}</Project>
-      <Name>Stock.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\wpfutils\WPFUtils.csproj">
       <Project>{c25c35ab-9f60-4ecb-bbcc-1a5e5b342e13}</Project>
       <Name>WPFUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stock.Data\Stock.Data.csproj">
+      <Project>{9241a964-1cf6-4e53-a56c-8a73cf2f4fdd}</Project>
+      <Name>Stock.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
