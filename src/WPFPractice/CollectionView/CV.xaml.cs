@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Stock.Data;
 using System.Collections.ObjectModel;
-using System.Windows.Markup;
 
 namespace WPFPractice.CollectionView
 {
@@ -21,7 +10,7 @@ namespace WPFPractice.CollectionView
     /// </summary>
     public partial class CV : Window
     {
-        public ObservableCollection<StockObject> Pos { get; set; }
+        public ObservableCollection<IStockObject> Pos { get; set; }
 
         public CV()
         {
@@ -46,7 +35,5 @@ namespace WPFPractice.CollectionView
             //CollectionViewGroup
             //DataGrid
         }
-        
-        
     }
 }

@@ -1,19 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Stock.Data;
-using System.Threading;
 using System.Collections.ObjectModel;
-
 
 namespace WPFPractice
 {
@@ -21,7 +9,7 @@ namespace WPFPractice
     public partial class WindowStyling : Window
     {
         StockDa SDA = new StockDa(true);
-        ObservableCollection<StockObject> Positions = new ObservableCollection<StockObject>();
+        ObservableCollection<IStockObject> Positions;
         private readonly Random rand = new Random();
 
         public WindowStyling()

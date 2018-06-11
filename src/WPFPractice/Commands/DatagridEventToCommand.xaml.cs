@@ -1,21 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.ObjectModel;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Stock.Data;
 using WPFUtils;
 using GalaSoft.MvvmLight.Command;
 using System.Collections;
-using System.Windows.Documents;
 
 namespace WPFPractice.Commands
 {
@@ -26,7 +14,7 @@ namespace WPFPractice.Commands
     {
         public RelayCommand<IList> ShowItemsCommand { get; set; }
         public Command ShowItemsCommand2 { get; set; }
-        public ObservableCollection<StockObject> Pos { get; set; }
+        public ObservableCollection<IStockObject> Pos { get; set; }
 
 
         public DatagridEventToCommand()
