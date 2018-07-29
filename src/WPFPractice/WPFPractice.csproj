@@ -131,7 +131,7 @@
     </Compile>
     <Compile Include="DependencyProperties\DependencyWindowViewModel.cs" />
     <Compile Include="DependencyProperties\MvvmBehaviors.cs" />
-    <Compile Include="DependencyProperties\SmartDataGrid.cs" />
+    <Compile Include="SmartGrid\SmartDataGrid.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Commands\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -163,6 +163,10 @@
     </Compile>
     <Compile Include="Shapes\Shape01.xaml.cs">
       <DependentUpon>Shape01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SmartGrid\RowViewModel.cs" />
+    <Compile Include="SmartGrid\SmartGridExampleView.xaml.cs">
+      <DependentUpon>SmartGridExampleView.xaml</DependentUpon>
     </Compile>
     <Compile Include="styles\DatagridStyle.xaml.cs">
       <DependentUpon>DatagridStyle.xaml</DependentUpon>
@@ -230,6 +234,7 @@
     <Compile Include="UI\FontPolyline.xaml.cs">
       <DependentUpon>FontPolyline.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Various\Indexers.cs" />
     <Compile Include="ViewModelLocator.xaml.cs">
       <DependentUpon>ViewModelLocator.xaml</DependentUpon>
     </Compile>
@@ -316,7 +321,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DependencyProperties\SmartDataGridStyle.xaml">
+    <Page Include="SmartGrid\SmartDataGridStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -325,6 +330,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Shapes\Shape01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SmartGrid\SmartGridExampleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

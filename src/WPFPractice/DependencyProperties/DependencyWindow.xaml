@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFPractice.DependencyProperties"
+        xmlns:sg="clr-namespace:WPFPractice.SmartGrid"
         mc:Ignorable="d"        
         Title="DependencyWindow" Height="300" Width="300"
         local:MvvmBehaviors.LoadedMethodName="LoadCustomers">
@@ -18,12 +19,12 @@
         <Grid.Resources>
             <ResourceDictionary >
                 <ResourceDictionary.MergedDictionaries >
-                    <ResourceDictionary Source="SmartDataGridStyle.xaml"/>
+                    <ResourceDictionary Source="../SmartGrid/SmartDataGridStyle.xaml"/>
                 </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
         </Grid.Resources>
 
-        <local:SmartDataGrid Grid.Row="1" ItemsSource="{Binding DataList}" Style="{StaticResource smartDataGridStyle}"/>
+        <sg:SmartDataGrid Grid.Row="1" ItemsSource="{Binding DataList}" Style="{StaticResource smartDataGridStyle}"/>
 
     </Grid>
 </Window>

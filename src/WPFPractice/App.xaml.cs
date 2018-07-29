@@ -8,6 +8,7 @@ using WPFPractice.DependencyProperties;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Prism.UnityExtensions;
 using Microsoft.Practices.Prism.Events;
+using WPFPractice.SmartGrid;
 
 namespace WPFPractice
 {
@@ -55,9 +56,9 @@ namespace WPFPractice
 
                 }
             }
-            
-            new Threads.Thread01().Show();
-            
+
+            new DependencyWindow().Show();
+
             //you can get access to the current application instance from anywhere
             //using application.current
 
