@@ -1,34 +1,26 @@
 ﻿
+using System.Collections.Generic;
+using System.Dynamic;
+
 namespace WPFPractice.SmartGrid
 {
     public interface IRowViewModel
-    {
+    {        
     }
 
-    public class RowViewModel : IRowViewModel
+    public class RowViewModel : DynamicObject, IRowViewModel
     {
-        private string[] values = new string[100];
+        private Dictionary<string, object> values = new Dictionary<string, object>();
         
-        public RowViewModel()
-        {
-        }
-
-        public string this[int number]
+        public object this[string name]
         {
             get
             {
-                if(number>0 && number< values.Length)
-                {
-                    return values[number];
-                }
-                return "Error";
+                return values[name];
             }
             set
             {
-                if (number > 0 && number < values.Length)
-                {
-                    values[number] = value;
-                }
+                values[name] = value;
             }
         }
     }

@@ -22,8 +22,6 @@ namespace WPFPractice.SmartGrid
         public SmartGridExampleView()
         {
             InitializeComponent();
-            var rowvm = new RowViewModel();
-            rowvm[0] = "Hello";
         }
     }
 }

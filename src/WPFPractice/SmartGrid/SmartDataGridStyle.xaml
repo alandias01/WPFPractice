@@ -4,5 +4,6 @@
     
     <Style TargetType="{x:Type local:SmartDataGrid}" x:Key="smartDataGridStyle">
         <Setter Property="SelectedItem" Value="{Binding SI}"/>
+        <Setter Property="ItemsSource" Value="{Binding Rows}" />
     </Style>
 </ResourceDictionary>

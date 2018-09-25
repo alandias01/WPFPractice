@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:WPFPractice.SmartGrid"
         mc:Ignorable="d"
         Title="SmartGridExampleView" Height="450" Width="400">
+    <Window.DataContext>
+        <local:SmartGridExampleViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries >
+                <ResourceDictionary Source="SmartDataGridStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <local:SmartDataGrid Grid.Row="1" Style="{StaticResource smartDataGridStyle}"></local:SmartDataGrid>
+
     </Grid>
 </Window>

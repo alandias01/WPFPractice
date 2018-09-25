@@ -168,6 +168,7 @@
     <Compile Include="SmartGrid\SmartGridExampleView.xaml.cs">
       <DependentUpon>SmartGridExampleView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SmartGrid\SmartGridExampleViewModel.cs" />
     <Compile Include="styles\DatagridStyle.xaml.cs">
       <DependentUpon>DatagridStyle.xaml</DependentUpon>
     </Compile>

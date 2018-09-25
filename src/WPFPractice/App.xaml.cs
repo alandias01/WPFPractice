@@ -57,7 +57,7 @@ namespace WPFPractice
                 }
             }
 
-            new DependencyWindow().Show();
+            new SmartGridExampleView().Show();
 
             //you can get access to the current application instance from anywhere
             //using application.current
