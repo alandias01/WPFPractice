@@ -126,11 +126,44 @@
     <Compile Include="Controls\DGHighLightCell.xaml.cs">
       <DependentUpon>DGHighLightCell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataStructuresAlgorithms\LinkedLists.cs" />
+    <Compile Include="DataStructuresAlgorithms\Searching.cs" />
+    <Compile Include="DataStructuresAlgorithms\SortingAlgo.cs" />
     <Compile Include="DependencyProperties\DependencyWindow.xaml.cs">
       <DependentUpon>DependencyWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="DependencyProperties\DependencyWindowViewModel.cs" />
     <Compile Include="DependencyProperties\MvvmBehaviors.cs" />
+    <Compile Include="DesignPatterns\Absfac %28simple%29.cs" />
+    <Compile Include="DesignPatterns\absfacprac.cs" />
+    <Compile Include="DesignPatterns\Abstract Factory.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory %28using bonds%29.cs" />
+    <Compile Include="DesignPatterns\Adapter%28simple%29.cs" />
+    <Compile Include="DesignPatterns\Adapter.cs" />
+    <Compile Include="DesignPatterns\Bridge.cs" />
+    <Compile Include="DesignPatterns\Command.cs" />
+    <Compile Include="DesignPatterns\Composite.cs" />
+    <Compile Include="DesignPatterns\Decorator.cs" />
+    <Compile Include="DesignPatterns\Facade.cs" />
+    <Compile Include="DesignPatterns\Factory %28using bonds%29.cs" />
+    <Compile Include="DesignPatterns\Factory.cs" />
+    <Compile Include="DesignPatterns\Iterator.cs" />
+    <Compile Include="DesignPatterns\Iterator2%28UsesMenuInterface%29.cs" />
+    <Compile Include="DesignPatterns\Iterator3%28IEnum Simplified%29.cs" />
+    <Compile Include="DesignPatterns\Iterator3%28IEnum%29.cs" />
+    <Compile Include="DesignPatterns\mvc%28simple%29.cs" />
+    <Compile Include="DesignPatterns\mvc%28simple2%29.cs" />
+    <Compile Include="DesignPatterns\mvc\controller.cs" />
+    <Compile Include="DesignPatterns\mvc\model.cs" />
+    <Compile Include="DesignPatterns\mvc\mvc.cs" />
+    <Compile Include="DesignPatterns\mvc\view.cs" />
+    <Compile Include="DesignPatterns\Observer%28simple%29.cs" />
+    <Compile Include="DesignPatterns\Observer.cs" />
+    <Compile Include="DesignPatterns\Singleton.cs" />
+    <Compile Include="DesignPatterns\Singleton2.cs" />
+    <Compile Include="DesignPatterns\State%28withoutStatePattern%29.cs" />
+    <Compile Include="DesignPatterns\State.cs" />
+    <Compile Include="DesignPatterns\Template.cs" />
     <Compile Include="SmartGrid\SmartDataGrid.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Commands\MainWindow.xaml.cs">
@@ -235,6 +268,38 @@
     <Compile Include="UI\FontPolyline.xaml.cs">
       <DependentUpon>FontPolyline.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Unsorted\BizObj01.cs" />
+    <Compile Include="Unsorted\CListReader.cs" />
+    <Compile Include="Unsorted\ComparerEquality.cs" />
+    <Compile Include="Unsorted\DBLayer.cs" />
+    <Compile Include="Unsorted\decor.cs" />
+    <Compile Include="Unsorted\Delegates.cs" />
+    <Compile Include="Unsorted\EncodingAndBytes.cs" />
+    <Compile Include="Unsorted\EventHandling01.cs" />
+    <Compile Include="Unsorted\EventHandling02.cs" />
+    <Compile Include="Unsorted\ExchangeServer.cs" />
+    <Compile Include="Unsorted\FileReading.cs" />
+    <Compile Include="Unsorted\file_dir_performance_watcher.cs" />
+    <Compile Include="Unsorted\func.cs" />
+    <Compile Include="Unsorted\GenericDataReader.cs" />
+    <Compile Include="Unsorted\graph01.cs" />
+    <Compile Include="Unsorted\InterfaceProgramming.cs" />
+    <Compile Include="Unsorted\Linq01.cs" />
+    <Compile Include="Unsorted\linqtoxml.cs" />
+    <Compile Include="Unsorted\maple.cs" />
+    <Compile Include="Unsorted\MatchPos.cs" />
+    <Compile Include="Unsorted\MatchTrade.cs" />
+    <Compile Include="Unsorted\MultiwayMatch.cs" />
+    <Compile Include="Unsorted\mytcp.cs" />
+    <Compile Include="Unsorted\Print.cs" />
+    <Compile Include="Unsorted\Program.cs" />
+    <Compile Include="Unsorted\ReadTradeFile.cs" />
+    <Compile Include="Unsorted\ReflectionGetTypes.cs" />
+    <Compile Include="Unsorted\simpleObserver.cs" />
+    <Compile Include="Unsorted\sockets.cs" />
+    <Compile Include="Unsorted\Stock01.cs" />
+    <Compile Include="Unsorted\Stock02.cs" />
+    <Compile Include="Unsorted\tcp.cs" />
     <Compile Include="Various\Indexers.cs" />
     <Compile Include="ViewModelLocator.xaml.cs">
       <DependentUpon>ViewModelLocator.xaml</DependentUpon>
@@ -500,7 +565,6 @@
   <ItemGroup>
     <Resource Include="UI\img\bg01.jpg" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\wpfutils\WPFUtils.csproj">
       <Project>{c25c35ab-9f60-4ecb-bbcc-1a5e5b342e13}</Project>
