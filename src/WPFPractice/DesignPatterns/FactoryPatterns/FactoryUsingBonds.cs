@@ -1,21 +1,19 @@
-﻿using System; using System.Collections; using System.Collections.Generic;
-using System.Collections.ObjectModel; using System.Collections.Specialized;
-using System.Text;
+﻿using System;
 
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.FactoryPatterns
 {
     public enum bondType {corp, gov}
 
-    abstract class Bond
+    public abstract class Bond
     {
         public string name;        
         public void processing() { Console.WriteLine("You are purchasing a "+name); }
     }
 
-    class Gov : Bond{ public Gov() {name="Government Bond";} }
-    class Corp : Bond { public Corp() {name="Corporate Bond"; } }
+    public class Gov : Bond{ public Gov() {name="Government Bond";} }
+    public class Corp : Bond { public Corp() {name="Corporate Bond"; } }
 
-    class Exchange
+    public class Exchange
     {
         public Bond buyBond(bondType type)
         {
@@ -33,16 +31,12 @@ namespace Console_practice
         }    
     }
         
-    class Program
+    public class FactoryUsingBonds
     {
-        static void Main(string[] args)
+        public FactoryUsingBonds()
         {
             Exchange exchange = new Exchange();
             exchange.buyBond(bondType.corp);
-
-            string z = Console.ReadLine();
-        } //Main
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

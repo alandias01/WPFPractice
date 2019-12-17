@@ -1,9 +1,6 @@
-﻿using System; using System.Collections; using System.Collections.Generic;
-using System.Collections.ObjectModel; using System.Collections.Specialized;
-using System.Text;
+﻿using System;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns
 {
     //Original problem
     public class CoffeeOld
@@ -80,24 +77,16 @@ namespace Console_practice
     //We have hook in abstrat class and let the lower level classes override
     //Hook gives subclass option to get involved in the steps of the template
     //pg 295 has more details for Hooks purpose
-
-
-
-    class Program
+    
+    public class Template
     {
-
-        static void Main(string[] args)
+        public Template()
         {
             TeaOld oldTea = new TeaOld(); oldTea.prepareRecipe();
             CoffeeNew coffee = new CoffeeNew(); coffee.PrepareRecipe();
 
             CoffeeNewWithHook coffeeHook = new CoffeeNewWithHook();
             coffeeHook.PrepareRecipeWithHook(true); //added
-
-
-            string z = Console.ReadLine();
-        } //Main
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

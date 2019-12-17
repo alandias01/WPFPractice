@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Data;
 
-namespace Console_practice
+namespace WPFPractice.DesignPatterns
 {
     public abstract class Beverage
     {
@@ -44,9 +37,9 @@ namespace Console_practice
         public override double cost() { return .3 + beverage.cost(); }
     }
 
-    class Program 
+    public class Decorator 
     { 
-        static void Main(string[] args)
+        public Decorator()
         {
             Beverage beverage = new Espresso();
             Console.WriteLine(beverage.getDescription() + " $" + beverage.cost());
@@ -60,9 +53,6 @@ namespace Console_practice
  
 
             string z = Console.ReadLine();
-        } //Main
-
-
-    }//Program
-    
-} //namespace Console_practice
+        }
+    }    
+}

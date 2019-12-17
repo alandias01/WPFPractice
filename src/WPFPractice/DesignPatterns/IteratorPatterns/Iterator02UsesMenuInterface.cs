@@ -1,15 +1,12 @@
-﻿using System; using System.Collections; using System.Collections.Generic;
-using System.Collections.ObjectModel; using System.Collections.Specialized;
-using System.Text;
+﻿using System;
+using System.Collections;
 
-
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.IteratorPatterns.IteratorPatterns02
 {
-    public interface Iterator { bool HasNext(); object Next(); }  //New    
-    public interface Menu { Iterator CreateIterator();}  //New
+    public interface IIterator { bool HasNext(); object Next(); }  //New    
+    public interface Menu { IIterator CreateIterator();}  //New
 
-    public class DinnerMenuIterator : Iterator  //New
+    public class DinnerMenuIterator : IIterator  //New
     {
         MenuItem[] items;
         int position = 0;
@@ -33,7 +30,7 @@ namespace Console_practice
         }
     }
 
-    public class PancakeHouseIterator : Iterator  //New
+    public class PancakeHouseIterator : IIterator  //New
     {
         ArrayList menuItems = new ArrayList();
         int position = 0;
@@ -68,15 +65,15 @@ namespace Console_practice
 
         public void printMenu()
         {
-            Iterator pancakeIterator = phMenu.CreateIterator();
-            Iterator dinnerIterator = dMenu.CreateIterator();
+            IIterator pancakeIterator = phMenu.CreateIterator();
+            IIterator dinnerIterator = dMenu.CreateIterator();
             Console.WriteLine("BreakFastMenu\n");
             printMenu(pancakeIterator);
             Console.WriteLine("DinnerMenu\n");
             printMenu(dinnerIterator);
         }
 
-        private void printMenu(Iterator iter)
+        private void printMenu(IIterator iter)
         {
             while (iter.HasNext())
             {
@@ -121,7 +118,7 @@ namespace Console_practice
 
         public ArrayList getMenuItems() { return menuItems; }
 
-        public Iterator CreateIterator() //New
+        public IIterator CreateIterator() //New
         { return new PancakeHouseIterator(menuItems); 
             //return menuItems.  Iterator(); NEW
         
@@ -157,14 +154,13 @@ namespace Console_practice
 
         public MenuItem[] getMenuItems() { return menuItems; }
 
-        public Iterator CreateIterator() //New
+        public IIterator CreateIterator() //New
         { return new DinnerMenuIterator(menuItems); }
     }
 
-    class Program
+    public class Iterator02UsesMenuInterface
     {
-
-        static void Main(string[] args)
+        public Iterator02UsesMenuInterface()
         {
             PancakeHouseMenu phm = new PancakeHouseMenu();
             ArrayList breakfastItems = phm.getMenuItems();
@@ -188,12 +184,6 @@ namespace Console_practice
             DinnerMenu dMenu2 = new DinnerMenu();
             Waitress waitress = new Waitress(phMenu2, dMenu2);
             waitress.printMenu();
-
-            //New 2
-
-            string z = Console.ReadLine();
-        } //Main
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

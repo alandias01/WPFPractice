@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsolePractice.DesignPatterns.AbstractFactory
+namespace WPFPractice.DesignPatterns.AbstractFactoryPatterns
 {
     public class AbstractFactory
     {

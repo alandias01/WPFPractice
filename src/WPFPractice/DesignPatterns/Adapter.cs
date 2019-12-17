@@ -1,8 +1,6 @@
-﻿using System; using System.Collections; using System.Collections.Generic;
-using System.Collections.ObjectModel; using System.Collections.Specialized;
-using System.Text;
+﻿using System; 
 
-namespace Console_practice
+namespace WPFPractice.DesignPatterns
 {
     public interface Duck {void Quack(); void Fly();}
     public interface Turkey { void Gobble(); void Fly();}
@@ -40,22 +38,21 @@ namespace Console_practice
         public WildTurkey(){ }
         public void Gobble() { Console.WriteLine("Gooble, gooble"); }
         public void Fly() { Console.WriteLine("I'm flying a short distance"); }        
-    }
+    }    
     
-    
-    class Program
+    public class Adapter
     {
-        static void Main(string[] args)
+        public Adapter()
         {
             MallardDuck myduck = new MallardDuck();
             WildTurkey myturkey = new WildTurkey();
             Duck turkeyadapter = new TurkeyAdapter(myturkey);
-            myturkey.Gobble();            myturkey.Fly();
-            myduck.Quack();            myduck.Fly();
-            turkeyadapter.Quack();            turkeyadapter.Fly();
-            string z = Console.ReadLine();
-        } //Main
-
-    }//Program
-
-} //namespace Console_practice
+            myturkey.Gobble();
+            myturkey.Fly();
+            myduck.Quack();
+            myduck.Fly();
+            turkeyadapter.Quack();
+            turkeyadapter.Fly();
+        }        
+    }
+}

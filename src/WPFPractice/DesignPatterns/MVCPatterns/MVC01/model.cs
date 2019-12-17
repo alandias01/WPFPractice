@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.MVCPatterns.MVC01
 {
     public interface BeatObserver { void updateBeat();}
     public interface BPMObserver { void updateBPM();}

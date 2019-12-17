@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.DesignPatterns.AbstractFactoryPatterns
 {
     /*
      * Bond has attributes like maturity date
@@ -76,17 +68,13 @@ namespace ConsoleApplication1
             return muni;
         }
     }
-
-
-    class Program
-    {        
-        static void Main(string[] args)
+    
+    class AbstractFactoryUsingBonds
+    {
+        public AbstractFactoryUsingBonds()
         {
             Exchange myExchange = new NYExchange();
             myExchange.show();
-            
-
-            Console.ReadLine();
-        }
+        }        
     }
 }

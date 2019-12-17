@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Text;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.ObserverPatterns.ObserverPatternsSimple
 {
     interface ISubject { void regObs(IObserver o); void notifyObs(); }
     interface IObserver { void update(int a);}
@@ -39,23 +34,14 @@ namespace Console_practice
         public void display() { Console.WriteLine("DSP2 " + (a+2)); }
     }
 
-
-
-    class Program
+    public class ObserverSimple
     {
-        static void Main(string[] args)
+        public ObserverSimple()
         {
             WeatherData wd = new WeatherData();
             DSP1 d1 = new DSP1(wd);
             DSP2 d2 = new DSP2(wd);
             wd.notifyObs();
-            
-
-            string z = Console.ReadLine();
-        } //Main
-
-        
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.Text;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.StatePatterns
 {
     public class GumballMachine
     {        
@@ -159,12 +154,11 @@ namespace Console_practice
         }
         
         public override string ToString(){return "waiting for turn of crank";}        
-    }
-    
+    }    
 
-    class Program
+    public class StateExample
     {        
-        static void Main(string[] args)
+        public StateExample()
         {
             GumballMachine gbm = new GumballMachine(3); 
             

@@ -1,49 +1,16 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.DesignPatterns.AbstractFactoryPatterns
 {
     //Create a person with an arm object that if normal, 5 fingers, retard has 6
 
-    class Program
+    public class AbstractFactoryPractice
     {
-
-        static void Main(string[] args)
+        public AbstractFactoryPractice()
         {
-            #region Args
-            foreach (string arg in args)
-            {
-                Console.WriteLine(arg);
-            }
-            #endregion
-
-            Person p = new Person(new RetardedPersonFactory());
-            
+            var p = new Person(new RetardedPersonFactory());
             Console.WriteLine(p.Arm.fingers);
-            
-            Console.ReadLine();
-            //cd "Documents and Settings\alan\My Documents\Visual Studio 2010\Projects\Console_practice\Console_practice\bin\Debug"
-        }
-
+        }        
     }
 
     public interface IPersonFactory
@@ -53,7 +20,6 @@ namespace ConsoleApplication1
 
     public class NormalPersonFactory : IPersonFactory
     {
-
         public IArm CreateArm()
         {
             return new NormalArm();
@@ -61,7 +27,6 @@ namespace ConsoleApplication1
     }
     public class RetardedPersonFactory : IPersonFactory
     {
-
         public IArm CreateArm()
         {
             return new RetardArm();
@@ -95,7 +60,4 @@ namespace ConsoleApplication1
             Arm = IPF.CreateArm();
         }
     }
-
 }
-
-

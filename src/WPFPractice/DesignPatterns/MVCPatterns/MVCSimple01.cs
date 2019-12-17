@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Text;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.MVCPatterns.MVCPatterns01
 {
     interface BPMObserver{ void update(); }
     interface IBPMController { void increaseBPM(); void decreaseBPM(); void setBPM(int bpm);}
@@ -70,19 +65,13 @@ namespace Console_practice
 
     }
 
-    class Program
+    public class MVCSimple01
     {
-        static void Main(string[] args)
+        public MVCSimple01()
         {
             IBPMModelInterface model = new BPMModel();
             IBPMController controller = new BPMController(model);
             controller.increaseBPM();
-
-            string z = Console.ReadLine();
-        } //Main
-
-        
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.Text;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.StatePatterns
 {
     public class GumballMachineStart
     {
@@ -114,9 +109,9 @@ namespace Console_practice
     }
 
 
-    class Program
+    public class StateExampleWithoutStatePattern
     {
-        static void Main(string[] args)
+        public StateExampleWithoutStatePattern()
         {
             GumballMachineStart gbm = new GumballMachineStart(5);
             Console.WriteLine(gbm);

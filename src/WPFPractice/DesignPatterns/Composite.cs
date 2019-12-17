@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Text;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns
 {
-    abstract class MenuComponent
+    public abstract class MenuComponent
     {
         public virtual void Add(MenuComponent menuComponent)
         {throw new NotImplementedException();}        
@@ -32,7 +27,7 @@ namespace Console_practice
         { throw new NotImplementedException(); }
     }
 
-    class Menu : MenuComponent
+    public class Menu : MenuComponent
     {
         ArrayList menuComponents = new ArrayList();
         string name, description;
@@ -63,7 +58,7 @@ namespace Console_practice
         }
     }
 
-    class MenuItem : MenuComponent
+    public class MenuItem : MenuComponent
     {
         string name; double price;
         public MenuItem(string n, double p) { this.name = n; this.price = p; }
@@ -73,21 +68,22 @@ namespace Console_practice
         { Console.WriteLine(" "+getName()+" "+getPrice()); }
     }
 
-    class Waitress
+    public class Waitress
     {
         MenuComponent allMenus;
         public Waitress(MenuComponent allMenus) { this.allMenus = allMenus; }
         public void printMenu() { allMenus.Print(); }
     }
 
-    class Program
-    {
-        static void Main(string[] args)
+    public class Composite
+    {        
+        public Composite()
         {
             MenuComponent allMenus = new Menu("All Menus", "All Menus combined");
             MenuComponent phMenu = new Menu("Pancake Menu", "Breakfast");
             MenuComponent dMenu = new Menu("Dinner Menu", "Dinner");
             MenuComponent dessert = new Menu("Dessert Menu","Dessert");
+
 
             allMenus.Add(phMenu);
             allMenus.Add(dMenu);
@@ -102,8 +98,6 @@ namespace Console_practice
             w.printMenu();
 
             string z = Console.ReadLine();
-        } //Main
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Text;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.MVCPatterns.MVCPatterns02
 {
     interface IObservable { void registerObserver(IObserver o); void notifyObserver();}
     interface IObserver { void update();}
@@ -66,17 +61,13 @@ namespace Console_practice
         { foreach (IObserver obs in bpmObservers) { obs.update(); } }
     }
 
-    class Program
+    public class MVCSimple02
     {
-        static void Main(string[] args)
+        public MVCSimple02()
         {
             IBPMModel model = new BPMModel();
             IBPMController c = new BPMController(model);
             c.decreaseBPM(); //should be done by views decrease button
-
-            string z = Console.ReadLine();
-        } //Main       
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

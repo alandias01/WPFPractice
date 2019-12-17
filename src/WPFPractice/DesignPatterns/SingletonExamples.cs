@@ -1,60 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Configuration;
-using System.Linq;
-using System.IO;
-using System.Text.RegularExpressions;
-using Microsoft.Office.Interop.Word;
-using System.Data.SqlClient;
-using System.Data;
-using System.Threading;
 
-
-
-//
-
-
-namespace testing
+namespace WPFPractice.DesignPatterns
 {
-
-   
-
-    class Program
-    {
-        
-        static void Main(string[] args)
-        {
-            
-
-
-            //Console.WriteLine();
-            Console.ReadLine();
-           
+    public class SingletonExamples
+    {        
+        public SingletonExamples()
+        {                       
         }
-
-
     }
 
-
-
-    public class Singleton1
+    public class Singleton
     {
-        private static Singleton1 instance;
+        private static Singleton instance;
 
-        private Singleton1() { }
+        private Singleton() { }
 
-        public static Singleton1 Instance
+        public static Singleton GetInstance()
         {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new Singleton1();
-                }
-                return instance;
-            }
+            if (instance == null) { instance = new Singleton(); }
+            return instance;
         }
+
+        //Getter version
+        //public static Singleton Instance
+        //{
+        //    get
+        //    {
+        //        if (instance == null)
+        //        {
+        //            instance = new Singleton();
+        //        }
+        //        return instance;
+        //    }
+        //}
     }
 
     /*The main disadvantage of this implementation, however, is that it is not safe for multithreaded environments. 
@@ -78,7 +56,7 @@ namespace testing
     {
         private static readonly Singleton2 instance = new Singleton2();
 
-        private Singleton2() { }
+        private Singleton2() { }        
 
         public static Singleton2 Instance
         {
@@ -150,5 +128,4 @@ namespace testing
             }
         }
     }
-
 }

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.FactoryPatterns
 {
     public abstract class Pizza 
     {
@@ -57,10 +53,9 @@ namespace Console_practice
             else return null;
         }
     }
-
-    class Program
+    public class Factory
     {
-        static void Main(string[] args)
+        public Factory()
         {
             PizzaStore nystore = new NYPizzaStore();
             Pizza pizza = nystore.orderPizza("cheese");
@@ -76,9 +71,6 @@ namespace Console_practice
             Console.WriteLine("You ordered a " + pizza.getName() + "\n");
             //Preparing CHCheesePizza, cutting diagonal slices, you ordered a CHCheesePizza
             string z = Console.ReadLine();
-        } //Main
-
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

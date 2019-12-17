@@ -1,32 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
 
-
-namespace ConsolePractice.DesignPatterns
-{
-    public abstract class baseClass
-    {
-        public void speak()
-        {
-            string msg = createVoice();
-            Console.WriteLine(msg);
-        }
-
-        protected abstract string createVoice();
-    }
-
-    public class subClass1 : baseClass
-    {
-        protected override string createVoice() { return "Im subclass 1"; }
-
-    }
-
+//Added extra namespace suffix (AbstractFactory2) to avoid class name duplicates like ClamPizza
+namespace WPFPractice.DesignPatterns.AbstractFactoryPatterns.AbstractFactory2
+{    
     public interface IDough { string getName(); }
     public class ThinCrustDough : IDough { public string getName() { return "TCD"; } }
     public interface IPIF { IDough createDough();}
@@ -76,14 +52,12 @@ namespace ConsolePractice.DesignPatterns
         }
     }
 
-    public class AbsFac
+    public class AbstractFactorySimple
     {
-        public AbsFac()
+        public AbstractFactorySimple()
         {
             PizzaStore a = new NYPizzaStore();
-            a.orderPizza();
-
-            Console.ReadLine();
+            a.orderPizza();            
         }
     }
 }

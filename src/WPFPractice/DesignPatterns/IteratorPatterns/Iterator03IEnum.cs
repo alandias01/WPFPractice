@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Text;
 
-
-namespace Console_practice
+namespace WPFPractice.DesignPatterns.IteratorPatterns.IteratorPatterns03
 {
     public interface Menu { IEnumerator CreateIterator();}
 
@@ -106,11 +101,10 @@ namespace Console_practice
         }
     }
 
-    class Program
+    public class Iterator03IEnum
     {
-        static void Main(string[] args)
+        public Iterator03IEnum()
         {
-
             PancakeHouseMenu phMenu2 = new PancakeHouseMenu();
             DinnerMenu dMenu2 = new DinnerMenu();
 
@@ -118,11 +112,6 @@ namespace Console_practice
             menus.Add(phMenu2); menus.Add(dMenu2);
             Waitress waitress = new Waitress(menus);
             waitress.printMenu();
-
-
-            string z = Console.ReadLine();
-        } //Main
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}
