@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace ConsolePractice.DataStructuresAlgorithms
+namespace WPFPractice.DataStructuresAlgorithms
 {
     public class Searching
     {
@@ -14,7 +11,6 @@ namespace ConsolePractice.DataStructuresAlgorithms
             Console.WriteLine(SeqSearch(arr, 13));
             Console.WriteLine(SeqSearch_better(words, "Ben"));
             Console.WriteLine(SeqSearch_80_20(words, "Ben"));
-
         }
 
         public int SeqSearch(int[] arr, int sValue)
@@ -40,7 +36,6 @@ namespace ConsolePractice.DataStructuresAlgorithms
                 max = m > max ? m : max;
             return max;
         }
-
 
         static int SeqSearch_better(string[] arr, string value) //If found, moves item closer
         {
@@ -93,7 +88,6 @@ namespace ConsolePractice.DataStructuresAlgorithms
             return -1;
         }
 
-
         public int recursive_bin_search(int[] arr, int value, int lower, int upper)
         {
             int mid;
@@ -104,7 +98,6 @@ namespace ConsolePractice.DataStructuresAlgorithms
                 return mid;
             else
                 return recursive_bin_search(arr, value, mid + 1, upper);
-
         }
 
         //Recursion
@@ -125,13 +118,11 @@ namespace ConsolePractice.DataStructuresAlgorithms
             }
         }
 
-
         static void swap(string[] arr, int index)
         {
             string temp = arr[index];
             arr[index] = arr[index - 1];
             arr[index - 1] = temp;
         }
-
     }
 }

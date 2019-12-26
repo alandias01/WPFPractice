@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-
-namespace ConsolePractice.DataStructuresAlgorithms
+namespace WPFPractice.DataStructuresAlgorithms
 {   
     public class LinkedLists
     {
@@ -20,8 +16,6 @@ namespace ConsolePractice.DataStructuresAlgorithms
         }
 
         public void m1() { }
-        
-
     }
 
     public class mynode
@@ -88,8 +82,5 @@ namespace ConsolePractice.DataStructuresAlgorithms
                 iter = iter.link;
             }
         }
-
     }
-
-
 }

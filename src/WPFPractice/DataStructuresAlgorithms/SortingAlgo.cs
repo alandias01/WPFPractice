@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace ConsolePractice.DataStructuresAlgorithms
+namespace WPFPractice.DataStructuresAlgorithms
 {
     public class SortingAlgo
     {
@@ -52,7 +51,6 @@ namespace ConsolePractice.DataStructuresAlgorithms
                         arr[inner + 1] = temp;
                     }
                 }
-
             }
         }
 
@@ -142,7 +140,6 @@ namespace ConsolePractice.DataStructuresAlgorithms
             }
         }
 
-
         #region QuickSort
         
         public void QSort()
@@ -196,12 +193,5 @@ namespace ConsolePractice.DataStructuresAlgorithms
         }
 
         #endregion
-
-
-
     }
-
-
-
-
 }
