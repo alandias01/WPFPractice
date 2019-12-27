@@ -1,56 +1,15 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
-using System.Data.Common;
-using System.Data.OleDb;
 using System.Reflection;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    //Create a person with an arm object that if normal, 5 fingers, retard has 6
-
-    class Program
+    public class ReflectionGetTypes
     {
-        static void Main(string[] args)
+        public ReflectionGetTypes()
         {
-            #region Args
-            foreach (string arg in args)
-            {
-                Console.WriteLine(arg);
-            }
-            //cd "Documents and Settings\alan\My Documents\Visual Studio 2010\Projects\Console_practice\Console_practice\bin\Debug"
-            #endregion
-            
-            Console.ReadLine();
-
             AutoFactory fac = new AutoFactory();
             IAuto car = fac.CreateInstance("bmw");
-        }
-
-        public DateTime GetLastTradeDate()
-        {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday) { return DateTime.Today.AddDays(-3); }
-            else if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday) { return DateTime.Today.AddDays(-2); }
-            else { return DateTime.Today.AddDays(-1); }
-
         }
     }
 
@@ -106,16 +65,7 @@ namespace ConsoleApplication1
 
     public interface IAuto { }
 
-    public class BMW : IAuto
-    { }
+    public class BMW : IAuto { }
 
-    public class AUDI : IAuto
-    { }
-
-
-
+    public class AUDI : IAuto { }
 }
-
-
-
-

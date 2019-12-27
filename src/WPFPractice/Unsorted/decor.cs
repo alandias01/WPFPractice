@@ -1,28 +1,12 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-
-    class Program
-    {        
-        static void Main(string[] args)
+    public class Decor
+    {
+        public Decor()
         {
-            new MyProg(); Console.ReadLine();            
+            new MyProg();
         }
     }
 
@@ -36,12 +20,9 @@ namespace ConsoleApplication1
             s(c);
             c = new Mocha(c);
             s(c);
-
         }
 
         public void s(Coffee c) {Console.WriteLine(c.GetDesc()+" Price: "+c.GetCost()); }
-
-
     }
 
     public class Coffee
@@ -61,12 +42,10 @@ namespace ConsoleApplication1
             return "Columbian"+" "+ base.GetDesc();
         }
 
-        public override double GetCost() { return base.GetCost() + .5; }
- 
+        public override double GetCost() { return base.GetCost() + .5; } 
     }
 
     public abstract class Condiment : Coffee { }
-
 
     public class Mocha : Condiment
     {
@@ -83,14 +62,4 @@ namespace ConsoleApplication1
             return coffee.GetCost()+.75;
         }
     }
-
-    
-
-
-
-    
-
-
-
-
 }

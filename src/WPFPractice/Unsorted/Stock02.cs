@@ -1,52 +1,32 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
 using System.IO;
 using System.Net;
-using System.Net.Sockets;
-using System.Threading;
 using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
-using System.Data.Common;
 using System.Data.OleDb;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorteds
 {
-    class Program
+    public class Stock02
     {
-        static void Main(string[] args)
+        public Stock02()
         {
             HStockDataDA HSDA = new HStockDataDA();
             HStockDataFac HSDF = new HStockDataFac(HSDA);
             HSDA.DownloadDone += (e) => { Console.WriteLine(e.FileName+"\n"+e.Link); };
             List<HStockDataObject> HstockData = new List<HStockDataObject>();
             HSDF.LoadAll(HstockData);
-            
-            Console.ReadLine();
         }
-
     }
 
-    class HStockDataFac
+    public class HStockDataFac
     {
         public HStockDataDA HSDA;
         public HStockDataFac(HStockDataDA HSDA) { this.HSDA = HSDA; }
         
         public void LoadAll(ICollection<HStockDataObject> HStockData) { HSDA.LoadAll(HStockData); }        
     }
-
-
+    
     public class DownLoadEventArgs : EventArgs
     {
         public DownLoadEventArgs(string L, string F) { this.Link = L; this.FileName = F; }
@@ -55,7 +35,8 @@ namespace ConsoleApplication1
     }
 
     public delegate void DownloadDoneDelegate(DownLoadEventArgs e);
-    class HStockDataDA
+
+    public class HStockDataDA
     {
         string YahooFile= @"e:\HStockData.csv";
         public event DownloadDoneDelegate DownloadDone;
@@ -141,7 +122,7 @@ namespace ConsoleApplication1
 
     }
 
-    class HStockDataObject
+    public class HStockDataObject
     {
         #region Variables
         DateTime _date;
@@ -186,12 +167,5 @@ namespace ConsoleApplication1
             this.Adj_Close = (double)Row["Adj Close"];
         }
         #endregion
-
     }
-
-
-
-
 }
-
-

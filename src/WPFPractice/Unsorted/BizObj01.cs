@@ -1,54 +1,23 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-
-    class Program
+    public class BizObj01
     {        
-        static void Main(string[] args)
-        {
-            new MyProg(); Console.ReadLine();            
+        public BizObj01()
+        {            
         }
-    }
-
-    public class MyProg
-    {
-        public MyProg()
-        {
- 
-
-        }
-
-
     }
 
     public interface IObjectStatusManagement
     {
         bool IsNew { get; }
         bool IsDirty { get; }
-        bool IsValid { get; }
-        
+        bool IsValid { get; }        
     }
 
     public class MyObject : IObjectStatusManagement
     {
-
         private string _ticker;
         private int _qty;
         private int _price;
@@ -56,8 +25,6 @@ namespace ConsoleApplication1
         public string Ticker { get { return _ticker; } set { _ticker = value; MarkDirty(); } }
         public int Qty { get { return _qty; } set { _qty = value; MarkDirty(); } }
         public int Price { get { return _price; } set { _price = value; MarkDirty(); } }
-
-
 
         private bool _isNew = true;
         private bool _isDirty = true;
@@ -75,8 +42,7 @@ namespace ConsoleApplication1
         public virtual void MarkOld()
         {
             _isNew = false;
-            MarkClean();
-            
+            MarkClean();            
         }
 
         protected virtual void MarkNew()
@@ -105,7 +71,6 @@ namespace ConsoleApplication1
         {
             if (NameProperty is string) { string.IsNullOrEmpty(NameProperty as string); }
         }
-
     }
     
     /*
@@ -114,15 +79,4 @@ namespace ConsoleApplication1
      * takes in new values = MarkNew()
      * 
      */
-
-
-    
-
-
-
-    
-
-
-
-
 }

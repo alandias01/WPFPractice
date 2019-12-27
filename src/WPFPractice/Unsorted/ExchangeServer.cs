@@ -1,61 +1,18 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
 using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
 using Outlook = Microsoft.Office.Interop.Outlook;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    //Create a person with an arm object that if normal, 5 fingers, retard has 6
-
-    class Program
+    /* Commented out since I don't have a reference to MAPI
+     * 
+    public class ExchangeServer
     {
-        static void Main(string[] args)
+        public ExchangeServer()
         {
-            #region Args
-            foreach (string arg in args)
-            {
-                Console.WriteLine(arg);
-            }
-            //cd "Documents and Settings\alan\My Documents\Visual Studio 2010\Projects\Console_practice\Console_practice\bin\Debug"
-            #endregion
-
-            ExchangeServer.ReadOutlookNightCrawler();
-
-
-            Console.ReadLine();
-            
+            ReadOutlookNightCrawler();
         }
-
-        public DateTime GetLastTradeDate()
-        {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday) { return DateTime.Today.AddDays(-3); }
-            else if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday) { return DateTime.Today.AddDays(-2); }
-            else { return DateTime.Today.AddDays(-1); }
-
-        }
-    }
-
-
-
-    class ExchangeServer
-    {
         public static bool GetFile(string filename, DateTime date)
         {
             //Log.WriteLine("Create MAPI Session");
@@ -75,8 +32,7 @@ namespace ConsoleApplication1
                 //Log.WriteLine("Loging in");
                 oSession.Logon("SLLists", "welcome", false, true, 0, true, strProfileInfo);
                 //Log.WriteLine("Logged in");
-
-
+                
                 //get inbox
                 MAPI.Folder inbox = (MAPI.Folder)oSession.Inbox;
 
@@ -112,7 +68,6 @@ namespace ConsoleApplication1
                                 return true;
                             }
                         }
-
                     }
                 }
 
@@ -130,7 +85,7 @@ namespace ConsoleApplication1
         public static void ReadOutlookNightCrawler()
         {
             //I think ApplicationClass() works only if you have outlook installed
-            Outlook.Application outlook = new Outlook.ApplicationClass();
+            Outlook.Application outlook = new Outlook.Application();
             Outlook.NameSpace ns = outlook.GetNamespace("Mapi");
             object _missing = Type.Missing;
 
@@ -142,12 +97,12 @@ namespace ConsoleApplication1
             Outlook.MAPIFolder inbox = ns.GetSharedDefaultFolder(recip, Outlook.OlDefaultFolders.olFolderInbox);
 
             int unread = inbox.UnReadItemCount;
-            /*
-            foreach (Outlook.MailItem mail in inbox.Items)
-            {
-                string s = mail.Subject;
-            }
-            */
+            
+            //foreach (Outlook.MailItem mail in inbox.Items)
+            //{
+            //    string s = mail.Subject;
+            //}
+            
 
             Outlook.MailItem mitem = inbox.Items[1] as Outlook.MailItem;
 
@@ -160,14 +115,7 @@ namespace ConsoleApplication1
             }
 
             mitem.Attachments[1].SaveAsFile(System.AppDomain.CurrentDomain.BaseDirectory + "a");
-
-
         }
-
-
-
     }
-
+    */
 }
-
-

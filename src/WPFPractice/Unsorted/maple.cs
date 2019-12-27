@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
     /*
      * This application was designed for scalability
@@ -48,7 +41,6 @@ namespace ConsoleApplication1
                 foreach (KeyValuePair<string, int> k in pos) { sw.WriteLine(k.Key + " " + k.Value); }
                 sw.WriteLine();            
             }
-            
         }
     }
 
@@ -91,8 +83,6 @@ namespace ConsoleApplication1
                 catch (IndexOutOfRangeException e) {  }
             }
 
-
-            
             using (StreamReader sr = new StreamReader(@"c:/maple/Trades.csv"))
             {
                 try
@@ -113,17 +103,14 @@ namespace ConsoleApplication1
         public void generateReport() { myPosition.generateReport(); }
     }
 
-    class Program
+    public class maple
     {
-
-
-        static void Main(string[] args)
+        public maple()
         {
             Trader alan = new Trader();
             alan.generateReport();  //initial position
             alan.performTrades();   //upload traders trades
-            alan.generateReport();  //End of day position
-            
+            alan.generateReport();  //End of day position            
             
             //Console.WriteLine(a);
             Console.ReadLine();

@@ -1,21 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Configuration;
 using System.Linq;
 using System.Xml.Linq;
-
 using System.Threading;
 using System.IO;
 using System.Text.RegularExpressions;
 
-
-
-
-
-namespace testing
+namespace WPFPractice.Unsorted
 {
-
     public class Product { public int X { get; set; } public int Y { get; set; } }
 
     public class MyComparer : IEqualityComparer<Product>
@@ -24,9 +16,9 @@ namespace testing
         public int GetHashCode(Product obj) { return obj.X.GetHashCode(); }
     }
 
-    class Program
+    public class Linq01
     {
-        static void Main(string[] args)
+        public Linq01()
         {
             LinqSample l = new LinqSample();
             l.Linq10();
@@ -34,8 +26,6 @@ namespace testing
             Console.ReadLine();
         }
     }
-
-
 
     public class LinqSample
     {
@@ -384,13 +374,5 @@ namespace testing
 
     }
 
-    class holder { public string up { get; set; } public string down { get; set; } } 
-
+    public class holder { public string up { get; set; } public string down { get; set; } } 
 }
-
-
-        
-
-    
-
- 

@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
     public interface MyObservable { void register(MyObserver o); void notify();}
     public interface MyObserver { void update();}
@@ -25,9 +19,9 @@ namespace ConsoleApplication1
         public void update() { Console.WriteLine("This control added"); }
     }
 
-    class Program
+    public class simpleObserver
     {        
-        static void Main(string[] args)
+        public simpleObserver()
         {
             Subject s = new Subject();
             MyControl c1 = new MyControl(s);

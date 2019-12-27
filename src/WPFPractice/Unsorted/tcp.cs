@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Threading;
 
-namespace ConsoleApplication1
-{
-    
-    class Program
+namespace WPFPractice.Unsorted
+{    
+    public class tcp
     {
-
         static void Client1()
         {
             string input;
@@ -32,8 +26,7 @@ namespace ConsoleApplication1
                         //string msg = br.ReadString();
                         Console.WriteLine(msg);
                     }
-                }
-                
+                }                
             }
         }
 
@@ -53,7 +46,6 @@ namespace ConsoleApplication1
             }        
         }
 
-
         static void Server() // Handles a single client request, then exits.
         {
             TcpListener listener = new TcpListener(IPAddress.Any, 51111);
@@ -61,7 +53,6 @@ namespace ConsoleApplication1
             listener.Start();
             while (true)
             {
-
                 using (TcpClient c = listener.AcceptTcpClient())
                 using (NetworkStream n = c.GetStream())
                 {
@@ -93,13 +84,11 @@ namespace ConsoleApplication1
             //listener.Stop();
         }
 
-        static void Main(string[] args)
+        public tcp()
         {
             //new Thread(Server).Start(); // Run server method concurrently.
             //Thread.Sleep(500); // Give server time to start.
             Client1();
-            Console.ReadLine();
-
         }
     }
 }

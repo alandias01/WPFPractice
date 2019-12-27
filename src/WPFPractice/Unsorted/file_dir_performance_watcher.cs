@@ -1,29 +1,13 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
 using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
 using System.Diagnostics;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    class Program
-    {        
-        static void Main(string[] args)
+    public class file_dir_performance_watcher
+    {
+        public file_dir_performance_watcher()
         {
             //ShowDrives();
             //ShowDirectories();
@@ -33,9 +17,6 @@ namespace ConsoleApplication1
             //ShowPaths();
             ExtensionRemove();
             //S01();
-
-            Console.ReadLine();
-
         }
 
         static void ShowDrives()
@@ -133,7 +114,7 @@ namespace ConsoleApplication1
         static void regex01()
         {
             Regex r = new Regex(@"l",RegexOptions.IgnoreCase);
-            MatchCollection M = r.Matches("Helloa");
+            var M = r.Matches("Helloa");
             Console.WriteLine(M.Count); 
         }
 
@@ -173,17 +154,7 @@ namespace ConsoleApplication1
             Console.WriteLine( Num3.Contains("16").ToString() ); //True
             Console.WriteLine(Num2.IndexOf('3'));   //2
             Console.WriteLine(Num1.Replace('0', '1')); //1111269
-            Console.WriteLine(Num1.Split('2')[0]+" "+Num1.Split('2')[1]); //splits 0000269 to 0000 and 69
-            
+            Console.WriteLine(Num1.Split('2')[0]+" "+Num1.Split('2')[1]); //splits 0000269 to 0000 and 69            
         }
-
     }
-
-
-
-
-
-
 }
-
-

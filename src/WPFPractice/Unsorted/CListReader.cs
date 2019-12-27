@@ -1,85 +1,49 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
 using System.Text;
 using System.IO;
 using System.Net;
-using System.Net.Sockets;
 using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    class Program
-    {
-        delegate void d();
-        static void Main(string[] args)
-        {
-
-            CListReader clr = new CListReader();
-
-            Thread T = new Thread(() => 
-            { 
-                clr.AddToFormattedData("led");
-                clr.RemoveheaderFromFormatted();
-            });
-
-            T.Start();
-            
-            //Console.ReadLine();
-
-            clr.DownloadDone += () => clr.CreateFileFromFormattedData();
-            
-        }
-
-      
-
-    }
-
-    public delegate void DownloadDoneDelegate();
-    
     public class CListReader
     {
+        public delegate void DownloadDoneDelegate();
         public event DownloadDoneDelegate DownloadDone;
 
-        StringBuilder RawString=new StringBuilder();
-        string[] RawData;        
+        StringBuilder RawString = new StringBuilder();
+        string[] RawData;
         List<string> FormattedData = new List<string>();
         StringBuilder FormattedString = new StringBuilder();
         string URLElec = @"http://newyork.craigslist.org/search/ele";
+
+        public CListReader()
+        {
+            Thread T = new Thread(() =>
+            {
+                this.AddToFormattedData("led");
+                this.RemoveheaderFromFormatted();
+            });
+
+            T.Start();
+
+            this.DownloadDone += () => this.CreateFileFromFormattedData();
+        }
 
         public void onDownloadDone()
         {
             DownloadDoneDelegate downloaddone = DownloadDone;
             if (downloaddone != null)
             {
-                DownloadDone();
+                this.DownloadDone();
             }
         }
 
-        public CListReader()
-        {
-            //AddToFormattedData("led");
-            //RemoveheaderFromFormatted();
-            //CreateFileFromFormattedData();
-        }
-
-
         public void AddToFormattedData(string search)
         {
-            WebClient WC= new WebClient();
+            WebClient WC = new WebClient();
             WC.QueryString.Add("query", search);
             WC.QueryString.Add("srchType", "A");
             WC.QueryString.Add("minAsk", "");
@@ -96,7 +60,6 @@ namespace ConsoleApplication1
             {
                 FormattedData.Add(RD.TrimStart());
             }
- 
         }
 
         public void RemoveheaderFromFormatted()
@@ -107,17 +70,17 @@ namespace ConsoleApplication1
 
             DateTime DT;
             bool Breakout = false;
-            int EndIndex=0;
+            int EndIndex = 0;
             for (int i = 0; i < FormattedData.Count; i++)
             {
 
-                if (FormattedData[i].Length>=6)
+                if (FormattedData[i].Length >= 6)
                 {
-                    if (DateTime.TryParse(FormattedData[i].Substring(0,6),out DT)) 
+                    if (DateTime.TryParse(FormattedData[i].Substring(0, 6), out DT))
                     {
-                        Breakout=true;
+                        Breakout = true;
                         EndIndex = i - 1;
- 
+
                     }
                     if (Breakout) { break; }
                 }
@@ -135,18 +98,11 @@ namespace ConsoleApplication1
             {
                 sw.WriteLine(FormattedString);
             }
-            
- 
         }
 
         private string Strip(string text)
         {
             return Regex.Replace(text, @"(<(.|\n)*?>|&nbsp;)", string.Empty);
         }
-
     }
-
-
 }
-
-

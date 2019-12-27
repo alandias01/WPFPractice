@@ -1,30 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
 
-
-
-/* DB of searchable instruments.  Guitar, Mandolin
- * 
- * SN, price
- * Material
- * Paint
- * 
- * 
- * 
- */
-
-
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    class Program
+    public class MatchTrade
     {
-        static void Main(string[] args)
+        public MatchTrade()
         {
-
             PositionObject P1 = new PositionObject() { BGNREF = "10031", Ticker = "IBM", Rate = 1, QTY = 1000, BL = 'B', Price = 50, LNVAL = 50000 };
             PositionObject P2 = new PositionObject() { BGNREF = "10032", Ticker = "JPM", Rate = 1.1, QTY = 1000, BL = 'L', Price = 50, LNVAL = 50000 };
 
@@ -33,8 +15,7 @@ namespace ConsoleApplication1
 
             PositionObject P5 = new PositionObject() { BGNREF = "10035", Ticker = "GME", Rate = 1, QTY = 1000, BL = 'B', Price = 50, LNVAL = 50000 };
             PositionObject P6 = new PositionObject() { BGNREF = "10036", Ticker = "DYN", Rate = 1.1, QTY = 1000, BL = 'L', Price = 50, LNVAL = 50000 };
-
-
+            
             MatchObject MO1 = new MatchObject();
             MO1.Borrows.Add(P1);
             MO1.Loans.Add(P2);
@@ -62,15 +43,12 @@ namespace ConsoleApplication1
             }
 
             Console.ReadLine();
-
         }
     }
 
+    public class PositionObjectCollection : List<PositionObject> { }
 
-    class PositionCollection : List<PositionObject>
-    { }
-
-    class PositionObject
+    public class PositionObject
     {
         public string BGNREF { get; set; }
         public string Ticker { get; set; }
@@ -81,26 +59,11 @@ namespace ConsoleApplication1
         public char BL { get; set; }
     }
 
-    class MatchCollection : List<MatchObject>
-    { }
-
-
-
-    class MatchObject
+    public class MatchCollection : List<MatchObject> { }
+    
+    public class MatchObject
     {
-        public PositionCollection Borrows = new PositionCollection();
-        public PositionCollection Loans = new PositionCollection();
+        public PositionObjectCollection Borrows = new PositionObjectCollection();
+        public PositionObjectCollection Loans = new PositionObjectCollection();
     }
-
-
-
-
-
-
-
-
-
-
-
 }
-

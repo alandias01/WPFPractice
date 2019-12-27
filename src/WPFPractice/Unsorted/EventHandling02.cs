@@ -1,20 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
     /* How to use Delegates with Events properly
      * We use a delegate keyword to create a delegate.
@@ -36,8 +22,7 @@ namespace ConsoleApplication1
     public class Compressor { public void ShutOffCompressor() { Console.WriteLine("ShutOffCompressor"); } }
     public class Condenser { public void ShutOffCondenser() { Console.WriteLine("ShutOffCondenser"); } }
     public class Radiator { public void ShutOffRadiator() { Console.WriteLine("ShutOffRadiator"); } }
-
-
+    
     public delegate void StopMachineDelegate();
 
     public class Controller
@@ -50,10 +35,9 @@ namespace ConsoleApplication1
         }
     }
 
-    class Program
-    {
-        
-        static void Main(string[] args)
+    public class EventHandling02
+    {        
+        public EventHandling02()
         {
             Controller c = new Controller();
             
@@ -69,11 +53,6 @@ namespace ConsoleApplication1
             /* Since the controller doesn't hold references to the objects but pnly the methods, we've decoupled
              * the controller from the machine objects.  This is good design             
              */
-
-
-            Console.ReadLine();
-            //Console.WriteLine("");
         }
     }
-
 }

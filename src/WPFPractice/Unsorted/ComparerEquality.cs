@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
     public class NOEC : IEqualityComparer<NoteObject>
     {
-
         public bool Equals(NoteObject x, NoteObject y)
         {
             if ((x.ID == y.ID) && (x.Age == y.Age)) { return true; }
@@ -60,16 +52,11 @@ namespace ConsoleApplication1
         }
     }
 
-
-    class Program
+    public class ComparerEquality
     {
-
-        static void Main(string[] args)
+        public ComparerEquality()
         {
-            Test3();                        
-
-            Console.ReadLine();
-            //Console.WriteLine("");
+            Test3();
         }
 
         static void Test1()
@@ -79,7 +66,6 @@ namespace ConsoleApplication1
             var l2 = new List<NoteObject> { new NoteObject("Alan", 1,3), new NoteObject("Ben", 5,5) };
 
             var temp = new List<NoteObject>();
-
             
             foreach (NoteObject n in l1)
             {
@@ -87,24 +73,20 @@ namespace ConsoleApplication1
             }
 
             foreach (NoteObject a in temp) { Console.WriteLine(a.ID); };
-            Console.ReadLine();
- 
+            Console.ReadLine(); 
         }
 
         static void Test2()
         {
             var l1 = new List<NoteObject> { new NoteObject("Alan", 1, 2), new NoteObject("Sybil", 9, 3), new NoteObject("Ben", 5, 6) };
 
-            var l2 = new List<NoteObject> { new NoteObject("Alan", 1, 3), new NoteObject("Ben", 5, 5) };
-            
+            var l2 = new List<NoteObject> { new NoteObject("Alan", 1, 3), new NoteObject("Ben", 5, 5) };            
 
             IEnumerable<NoteObject> l3 = l1.Intersect<NoteObject>(l2, new NOEC());
             var l4 = new List<NoteObject>(l3);
             foreach (NoteObject r in l4) { l1.Remove(r); }
             
             foreach (NoteObject a in l1) { Console.WriteLine(a.ID); }
-
-
         }
 
         static void Test3()
@@ -118,9 +100,7 @@ namespace ConsoleApplication1
             foreach (NoteObject n in l1)
             {
                 Console.WriteLine(n.ID+" "+n.Name);
-            }
- 
+            } 
         }
-
     } 
 }

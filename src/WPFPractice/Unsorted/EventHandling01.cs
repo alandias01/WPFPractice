@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Text;
 
-namespace Console_practice
+namespace WPFPractice.Unsorted
 {
     public delegate void BallEventHandler(object sender, BallEventArgs e);
 
@@ -44,11 +39,9 @@ namespace Console_practice
         }
     }
 
-
-
-    class Program
+    public class EventHandling01
     {
-        static void Main(string[] args)
+        public EventHandling01()
         {
             Ball ball = new Ball();
             Pitcher pitcher=new Pitcher(ball);
@@ -57,8 +50,6 @@ namespace Console_practice
             ball.onBallInPlay(bea);
             string z = Console.ReadLine();
             
-        } //Main       
-
-    }//Program
-
-} //namespace Console_practice
+        }
+    }
+}

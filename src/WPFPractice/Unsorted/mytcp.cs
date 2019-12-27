@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Threading;
 
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    
-    class Program
+    public class mytcp
     {
-
         static void Client1()
         {
             string input;
@@ -33,7 +27,6 @@ namespace ConsoleApplication1
                         Console.WriteLine(msg);
                     }
                 }
-                
             }
         }
 
@@ -59,10 +52,7 @@ namespace ConsoleApplication1
                     }
                 }
             }
-
-
         }
-
 
         static void Server()
         {
@@ -115,14 +105,10 @@ namespace ConsoleApplication1
             finally { listener.Stop(); }
         }
 
-        
-
-        static void Main(string[] args)
+        public mytcp()
         {
             Server();
             //Client2();
-            
-
         }
     }
 }

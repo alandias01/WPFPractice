@@ -1,39 +1,17 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
 using System.Text;
 using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    class Program
+    public class EncodingAndBytes
     {
-       
-
-
-        static void Main(string[] args)
+        public EncodingAndBytes()
         {
-            EncodeString();
-            Console.ReadLine();
+            this.EncodeString();
         }
 
-        static void EncodeString()
+        private void EncodeString()
         {
             using (FileStream fs = File.Create("myfile.txt"))
             {
@@ -47,19 +25,16 @@ namespace ConsoleApplication1
 
                 try
                 {
-
                     fs.Write(bytemsg, 0, bytemsg.Length);
                 }
                 catch (IOException ex)
                 {
                     throw ex;
                 }
-
             }
         }
 
-
-        static void EncodeString2()
+        private void EncodeString2()
         {
             using (FileStream fs = File.Create("myfile.txt"))
             using (BinaryWriter bw = new BinaryWriter(fs))
@@ -72,23 +47,6 @@ namespace ConsoleApplication1
                 string readmsg = new BinaryReader(fr).ReadString();
                 Console.WriteLine(readmsg);
             }
-            
-
         }
-        
-
-
     }
-
- 
-     
-
-   
-
-
-   
-
-
 }
-
-

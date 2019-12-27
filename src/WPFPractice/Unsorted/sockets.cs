@@ -1,36 +1,16 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    class Program
+    public class sockets
     {
-        static void Main(string[] args)
+        public sockets()
         {
             //Server();
             //Client2();
-
-            Console.ReadLine();
-
         }
 
         static void Client1()
@@ -53,7 +33,6 @@ namespace ConsoleApplication1
                         Console.WriteLine(msg);
                     }
                 }
-
             }
         }
 
@@ -79,10 +58,7 @@ namespace ConsoleApplication1
                     }
                 }
             }
-
-
         }
-
 
         static void Server()
         {
@@ -133,8 +109,7 @@ namespace ConsoleApplication1
 
             catch (SocketException e) { Console.WriteLine("SocketException: {0}", e); }
             finally { listener.Stop(); }
-        }
-        
+        }        
 
         public Socket GetSocket(string Server, int Port)
         {
@@ -160,26 +135,9 @@ namespace ConsoleApplication1
                     break;
                 }
                 else { continue; }
-
             }
 
             return S;
- 
-
         }
-
-
     }
-
- 
-     
-
-   
-
-
-   
-
-
 }
-
-

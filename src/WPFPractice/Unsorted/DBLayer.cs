@@ -1,31 +1,14 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
 using System.Data.OleDb;
+using MySql.Data.MySqlClient;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    class Program
+    public class DBLayer
     {
-        static void Main(string[] args)
+        public DBLayer()
         {
             /*
             List<balObject> bo = new List<balObject>();
@@ -41,15 +24,11 @@ namespace ConsoleApplication1
             da.LoadAll(WO);
             foreach (WordsObject w in WO)
                 Console.WriteLine(w.Word);
-            
-            //Console.ReadLine();            
         }
-
     }
 
     public class balDA
     {
-
         string CmdStr = @"Data Source=.\SQLEXPRESS; database=AlanTest;Trusted_Connection=Yes; ";
 
         public void LoadAll(ICollection<balObject> list)
@@ -59,24 +38,23 @@ namespace ConsoleApplication1
 
             using (SqlConnection conn = new SqlConnection(CmdStr))
             {
-                SqlCommand cmd=new SqlCommand(LoadAllSQL, conn);
+                SqlCommand cmd = new SqlCommand(LoadAllSQL, conn);
                 //cmd.CommandType=CommandType.StoredProcedure;
-                
+
                 //cmd.Parameters.AddWithValue("","");
 
                 SqlDataReader rdr = null;
                 try
-                { 
+                {
                     conn.Open();
                     rdr = cmd.ExecuteReader();
                     while (rdr.Read())
                     {
-                        list.Add(new balObject(rdr)); 
-
+                        list.Add(new balObject(rdr));
                     }
                 }
 
-                catch(SqlException Ex)
+                catch (SqlException Ex)
                 { throw; }
 
                 finally
@@ -86,7 +64,6 @@ namespace ConsoleApplication1
                         rdr.Close();
                     }
                 }
-
             }
         }
 
@@ -102,7 +79,7 @@ namespace ConsoleApplication1
                 //cmd.CommandType=CommandType.StoredProcedure;
 
                 //cmd.Parameters.AddWithValue("","");
-                                
+
                 try
                 {
                     conn.Open();
@@ -110,10 +87,10 @@ namespace ConsoleApplication1
                 }
 
                 catch (SqlException Ex)
-                { 
-                    throw; 
+                {
+                    throw;
                 }
-            } 
+            }
         }
 
         public void Insert(balObject obj)
@@ -128,7 +105,7 @@ namespace ConsoleApplication1
 
                 cmd.Parameters.AddWithValue("@cpty", CheckNull(obj.cpty));
                 cmd.Parameters.AddWithValue("@quantity", CheckNull(obj.quantity));
-                                
+
                 try
                 {
                     conn.Open();
@@ -137,9 +114,7 @@ namespace ConsoleApplication1
 
                 catch (SqlException Ex)
                 { throw; }
-
             }
- 
         }
 
         public void Insert2(balObject obj)
@@ -163,9 +138,7 @@ namespace ConsoleApplication1
 
                 catch (SqlException Ex)
                 { throw; }
-
             }
-
         }
 
         public void Update(balObject obj)
@@ -180,7 +153,6 @@ namespace ConsoleApplication1
 
                 cmd.Parameters.AddWithValue("@cpty", obj.cpty);
                 cmd.Parameters.AddWithValue("@quantity", obj.quantity);
-                
 
                 try
                 {
@@ -189,10 +161,10 @@ namespace ConsoleApplication1
                 }
 
                 catch (SqlException Ex)
-                { /**/ }
-
+                {
+                    /**/
+                }
             }
-
         }
 
         public void InsertIntoAccess2007()
@@ -220,35 +192,33 @@ namespace ConsoleApplication1
                 }
 
                 catch (OleDbException Ex)
-                { throw; }
-
+                {
+                    throw;
+                }
             }
-
         }
 
         //If string is empty, it will set to NULL
         public object CheckNull(object X)
         {
-            if (X is  string) 
+            if (X is string)
             {
                 if (string.IsNullOrEmpty((string)X))
                 {
-                    return DBNull.Value; 
+                    return DBNull.Value;
                 }
-                else return X;                 
+                else return X;
             }
 
             else if (X == null)
-            { 
-                return DBNull.Value; 
+            {
+                return DBNull.Value;
             }
-
 
             else return X;
         }
-
     }
-    
+
     public class balObject
     {
         public balObject(SqlDataReader rdr)
@@ -256,13 +226,15 @@ namespace ConsoleApplication1
             this.cpty = rdr["cpty"] == DBNull.Value ? this.cpty : (string)rdr["cpty"];
             this.quantity = rdr["quantity"] == DBNull.Value ? this.quantity : (int)rdr["quantity"];
         }
-        public balObject(string c, int q) 
+
+        public balObject(string c, int q)
         {
             this.cpty = c;
             this.quantity = q;
         }
+
         public string cpty { get; set; }
-        public int? quantity { get; set; }        
+        public int? quantity { get; set; }
     }
 
     //MySql 
@@ -276,7 +248,6 @@ namespace ConsoleApplication1
             this.Word = row["word"] == DBNull.Value ? this.Word : (string)row["word"];
             this.Definition = row["definition"] == DBNull.Value ? this.Word : (string)row["definition"];
         }
-
     }
 
     public class WordsDA
@@ -309,21 +280,7 @@ namespace ConsoleApplication1
                         rdr.Close();
                     }
                 }
-
             }
-
-
         }
     }
- 
-     
-
-   
-
-
-   
-
-
 }
-
-

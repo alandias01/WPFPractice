@@ -1,38 +1,20 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Text;
-using System.Linq;
-using System.Data.Linq;
 
-
-
-namespace Console_practice
+namespace WPFPractice.Unsorted
 {
     public delegate void MultDelegate(int num1, int num2);
     public class MathClass
     {
         public void Mult(int num1, int num2) { Console.WriteLine(num1 * num2); }
     }
-    
 
-    class Program
+    public class Delegates
     {
-        static void Main(string[] args)
+        public Delegates()
         {
-            DelegateExamples d = new DelegateExamples();
-            d.Delegate03();
-
-            Console.ReadLine();
+            this.Delegate03();
         }
-    }
 
-
-
-    public class DelegateExamples
-    {
         public void Delegate01()
         {
             MathClass myMathClass = new MathClass();
@@ -45,12 +27,6 @@ namespace Console_practice
 
         public void Delegate03()
         {
-            
- 
         }
-        
-        
- 
     }
-
 } //namespace Console_practice

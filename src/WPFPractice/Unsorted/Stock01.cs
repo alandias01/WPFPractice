@@ -1,48 +1,27 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.EntityClient;
-using System.Data.Linq.Mapping;
-using System.Text;
 using System.IO;
 using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
-using System.ComponentModel;
-using System.Xml.Linq;
-using System.Diagnostics;
-using System.Configuration;
 using System.Data.Common;
 
-
-namespace ConsoleApplication1
+namespace WPFPractice.Unsorted
 {
-    class Program
+    public class Stock01
     {
-        static void Main(string[] args)
+        public Stock01()
         {
             new StockApp();
-
-            Console.ReadLine();
-            
-        }       
-
+        }
     }
 
-
-    class StockApp
+    public class StockApp
     {
         string Link = @"http://ichart.finance.yahoo.com/table.csv?s=YHOO&a=11&b=01&c=2011&d=11&e=14&f=2011&g=d&ignore=.csv";
         string TempFile = @"c:\temp.csv";
         List<string> HistoricalDataRaw = new List<string>();
 
-        public StockApp() { 
+        public StockApp() 
+        { 
             GetFile(); 
             ImportFile(); 
         }
@@ -52,8 +31,6 @@ namespace ConsoleApplication1
             WebClient myfile = new WebClient();
             myfile.DownloadFile(Link, TempFile);
         }
-
-
 
         public void ReadData()
         {
@@ -123,20 +100,15 @@ namespace ConsoleApplication1
                                 throw e;
                             }
                         }
-                    }
-                    
+                    }                    
                 }
             }
 
-
-
             return true;
         }
-
-
     }
 
-    class HistoricalPrice
+    public class HistoricalPrice
     {
         #region Variables
         string _date;
@@ -160,12 +132,5 @@ namespace ConsoleApplication1
 
         #region Methods
         #endregion
-
     }
-
-
-
-
 }
-
-
