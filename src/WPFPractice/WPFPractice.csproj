@@ -150,6 +150,15 @@
     <Compile Include="Controls\DGHighLightCell.xaml.cs">
       <DependentUpon>DGHighLightCell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Database\ADPDTC\ADPDTC.Designer.cs">
+      <DependentUpon>ADPDTC.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Database\ADPDTC\ADP_RawDataProvider.cs" />
+    <Compile Include="Database\ADPDTC\DTFPARTDataProvider.cs" />
+    <Compile Include="Database\ADPDTC\IDataProvider.cs" />
+    <Compile Include="Database\ADPDTC\PARTPODataProvider.cs" />
     <Compile Include="DataStructuresAlgorithms\LinkedLists.cs" />
     <Compile Include="DataStructuresAlgorithms\Searching.cs" />
     <Compile Include="DataStructuresAlgorithms\SortingAlgo.cs" />
@@ -566,6 +575,11 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="App.Config" />
+    <EntityDeploy Include="Database\ADPDTC\ADPDTC.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ADPDTC.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\ADPDTC\App.Config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\WPFPractice.TreeView.SLEntities.datasource" />
     <None Include="Properties\DataSources\WPFPractice.TreeViewControl.SLEntities.datasource" />
